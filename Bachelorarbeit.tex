@@ -1,0 +1,76 @@
+\documentclass[12pt,a4paper]{scrreprt}
+%
+%
+%% nötige packages
+\usepackage[ngerman]{babel}
+\usepackage[latin1]{inputenc} % ä ö ü Eingabe
+\usepackage{booktabs}
+%\usepackage[version=3]{mhchem} %bekomme Fehlermeldungen bei der Erklärung, wenn dieses package fehlt
+\usepackage{graphicx}
+\usepackage{amssymb}
+\usepackage{bm} % fett und kursiv im Mathemodus z.B. $\bm{bla}$
+\usepackage{lmodern} % für weitere Schriftarten (z.B. kursiv in Überschrift)
+\usepackage{inlinecite}
+\usepackage{float}
+\usepackage{tocbasic}
+\usepackage{tikz}
+\usepackage{nicefrac}
+%\usepackage{chemarr} %Selber eingefügt für chem. Formeln. Keine Ahnung ob das ne gute Idee ist
+\usepackage[section]{placeins}
+\usepackage{pdfpages}
+\usepackage{upgreek}
+\usepackage{framed} %macht einen rand um grafiken
+\newfloat{schema}{h}{scn}
+\floatname{schema}{schema}
+
+
+\floatstyle{plain}
+\newfloat{Schema}{htbp}{she}[chapter]
+
+
+\setlength{\parskip}{2.5ex plus0.5ex minus0.2ex}
+\setlength{\parindent}{0pt}
+\setcounter{secnumdepth}{5}
+
+%\includeonly{EundD}
+
+\hyphenation{Aceto-ni-tril}
+\hyphenation{Peak-po-ten-tial-differenz}
+\hyphenation{Glas-stopfen}
+\hyphenation{Alu-mi-ni-um-o-xid}
+\hyphenation{Diffusions-koeffizienten-messung}
+\hyphenation{elektro-chemischen}
+\hyphenation{elektro-chemischen}
+\hyphenation{Ox-idations-strom}
+\hyphenation{El-ek-tro-den-ober-flaeche}
+
+\begin{document}
+
+\include{Titelseite}
+\include{Erklaerung}
+\include{Abstract} 
+
+%\setcounter{secnumdepth}{5}
+%\setcounter{tocdepth}{5} 
+
+\tableofcontents
+
+\include{Einleitung}
+\include{Material}
+\include{Ergebnisse2}
+\include{Diskussion}
+
+\include{Danksagung}
+\bibliographystyle{standard}
+\bibliography{Literatur}
+
+%%\include{Anhang}
+%
+\end {document}
+%
+%
+%
+%
+%
+%%nützliche befehle: \FloatBarrier -> vll hilft es die tabellen gescheit zu setzen
+%% \textsc{Nicholson} für namen
