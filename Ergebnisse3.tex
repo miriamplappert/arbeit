@@ -56,19 +56,28 @@ Abbildung \ref{fig:getauscht} zeigt die Leistungen von Fisch 2, nachdem der S+ u
 
 
 \section{Videotrackingauswertung}
-Jeder Versuchsdurchlauf wurde beim Hauptversuch auf Video aufgenommen. Dabei wurde das Video gestartet, bevor die Startbox geöffnet wurde. Beendet wurde das Video bevor die Belohnung stattfand oder der Fisch zurück in die Startbox geführt wurde. In dem hier gezeigten Beispiel hat sich Fisch 2, nachdem er an der falschen Elektrode zunächst vorbei geschwommen ist, für die richtige Elektrode Elektrode 1 entschieden.
-Abbildung \ref{fig:path} zeigt das Ergebnis des Trackingprogrammes, welches über jedes Video laufen gelassen wurde. Das Trackingprogramm speicherte für jedes Videoframe eine X- und eine Y-Position und eine Orientierung des Fisches ab. 
+Jeder Versuchsdurchlauf wurde beim Hauptversuch auf Video aufgenommen. Dabei wurde das Video gestartet, bevor die Startbox geöffnet wurde. Beendet wurde das Video bevor die Belohnung stattfand oder der Fisch zurück in die Startbox geführt wurde.
+Die Videodateien wurden dann wie bereits im Kapitel Datenanalyse erläutert mit Hilfe eines Trackingprogramms analysiert.
 
 
 %%%%%% IN DAS TRACKINGBILD NOCH BESCHRIFTUNGEN EINFÜGEN MIT ELEKTRODE 1; ELEKTRODE2, 	TOR ZUR STARTBOX
 
-Mit Hilfe des Videotrackings war somit eine genaue Analyse der einzelnen Versuchsdurchläufe möglich.
 
+
+
+\subsection{Beispielvideo}
+
+Anhand eines Beispielvideos wird im Folgenden das Vorgehen bei der Videotrackingauswertung gezeigt:
 
 \begin{figure}[ht]
 \includegraphics[height=8.5cm]{Abbildungen/2015-08-18_1_OV_path}
 \caption{\label{fig:path}Trackingbild. Der blaue Pfad zeigt die sicher Position des Fisches an. Bei den roten Punkten, hat das Trackingprogramm den Fisch kurzzeitig verloren, diese sind geschätzte Positionen des Trackingprogramms.}
 \end{figure}
+
+Zunächst wurde jedes Video einzeln mit dem Trackingprogramm getrackt, dabei wurden die X und Y Position im Versuchsbecken und die Orientierung des Versuchstiers für jedes Videoframe in Listen gespeichert. Außerdem wurde eine Graphik erstellt, welche den zurückgelegten Weg des Fisches zeigt (siehe Abb. \ref{fig:path}).
+In dem in Abbildung \ref{fig:path} gezeigten Beispiel war Elektrode 1, die belohnte Elektrode, die den S+ Stimulus abgab. Das Versuchstier war in diesem Beispiel Fisch 2.
+Anhand des blauen Pfades ist zu sehen, das Fisch 2 zunächst an der falschen Elektrode (Elektrode 2) vorbei geschwommen ist und sich schließlich für Elektrode 1 entschieden hat.
+Im Folgenden soll gezeigt werden, worauf diese Behauptung beruht.
 
 Zunächst konnte so zum Beispiel zunächst bei jedem einzelnen Video die Entfernungen zu Elektrode 1 und Elektrode 2 berechnet werden. Abbildung \ref{fig:distanzen} zum Beispiel zeigt für das Videobeispiel die Distanzen zu Elektrode 1 und zu Elektrode 2. 
 
@@ -86,8 +95,7 @@ Zunächst konnte so zum Beispiel zunächst bei jedem einzelnen Video die Entfernun
 \caption{\label{fig:distanzen}Versuchsaufbau}
 \end{figure}
 
-
-
+\subsection{Videoübergreifende Auswertung}
 \begin{figure}[ht]
 \includegraphics[height=8.5cm]{Abbildungen/Histogramm_Distanz1}
 \caption{\label{fig:histodistanzen1}Fisch 1 Histogramme zur Distanz zu den Elektroden}
