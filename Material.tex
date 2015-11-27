@@ -39,8 +39,8 @@ Abbildung \ref{fig:heatmaps} zeigt dabei die auf eins normierte Stimulusintensit
 
 
 \begin{figure}
-\subfigure[Elektrisches Feld von Elektrode 1]{\includegraphics[height=7cm]{Abbildungen/Heatmap_electrode_1}}\hfill
-\subfigure[Elektrisches Feld von Elektrode 2]{\includegraphics[height=7cm]{Abbildungen/Heatmap_electrode_2}}
+\subfigure[Elektrisches Feld von Elektrode 1]{\includegraphics[height=6cm]{Abbildungen/Heatmap_electrode_1}}\hfill
+\subfigure[Elektrisches Feld von Elektrode 2]{\includegraphics[height=6cm]{Abbildungen/Heatmap_electrode_2}}
 \caption{\label{fig:heatmaps}Normierte Intensitäten von Elektrode 1 und Elektrode 2 für jede Position im Becken. Einstellungen im Messprogramm  "Relacs - Dual Field Amplitudes": Amplitude: 1 Volt, Frequenz: 1000 Hz}
 \end{figure}
 
@@ -89,7 +89,7 @@ Um sicherzustellen, dass die abgegebenen Stimuli zumindest an einer Position im 
 Die Ableitelektroden befanden sich in der Startbox und hatten die Funktion, die EOD des Versuchstieres zu messen. Hierbei handelte es sich um Kupferelektroden, welche separat zu den Stimuluselektroden mit einem zweiten Verstärker verbunden waren. Das Signal wurde anschließend über den Analog-Digitalwandler (NI BNC 2090) digitalisiert und an den Computer weitergegeben.
 
 \section{Aufnahmeprogramme}
-Zur Aufnahme der Daten wurde das Programm "Relacs Version 0.9.8" verwendet. Bei der Intensitäten von Elektrode 1 und 2 (siehe Abbildung \ref{fig:heatmap1} und \ref{fig:heatmap2}) wurde das Repro "Dual Field Amplitudes" verwendet. Bei allen anderen Messungen wurde mit dem Repro "Dual Beat" gearbeitet.
+Zur Aufnahme der Daten wurde das Programm "Relacs Version 0.9.8" verwendet. Bei der Messung der Intensitäten von Elektrode 1 und 2 (siehe Abbildung \ref{fig:heatmaps}) wurde das Repro "Dual Field Amplitudes" verwendet. Bei allen anderen Messungen wurde mit dem Repro "Dual Beat" gearbeitet.
 
 \chapter{Durchführung}
 Alle Versuche wurden nachmittags im Dunkeln durchgeführt. Der Grundablauf war dabei folgender: Zunächst wurden Wassertemperatur, Wasserstand und Leitfähigkeit im Versuchsbecken gemessen und notiert. Wichen diese stark von den festgesetzten Werten ab, so wurden Wasserstand, Temperatur und Leitfähigkeit im Versuchsbecken durch Wasserwechsel angepasst. Die festgesetzten Werte waren folgende Wasserstand = 14 (+- 0,2) Zentimeter, Leitfähigkeit = 300 (+- 20) Microsiemens pro Zentimerter, Temperatur 27 (+- 0,6) Grad Celsius. Anschließend wurde das Versuchstier mit einem Kescher in die Startbox gesetzt. Der Zugang zur Hauptbox war zu diesem Zeitpunkt geschlossen. Während sich das Tier in der Startbox befand, wurde die EOD Frequenz des Fisches gemessen und anschließend die Startbox geöffnet. Nach Beenden der Aufgabe wurde das Tier dann vorsichtig mit einem Käscher zurück in die Startbox geführt. Anschließend wurde der nächste Durchlauf gestartet. Jedes Versuchstier hatte pro Versuchstag zehn Versuchsdurchläufe.
@@ -170,11 +170,12 @@ Zur Datenanalyse wurde Python 2.7 in der Plattform "Pycharm Community Edition 4.
 
 \section{Auswertung der Relacsdateien}
 Die Relacsdatein wurden mit Python eingelesen und verarbeitet. Mit einem Binomialtest wurde dann überprüft, ob das Versuchstier signifikant häufiger die richtige als die falsche Elektrode ausgewählt hat.
+Aus dem Scipy Paket, einer Sammlung mehrerer Python Open-Source- Pakete für wissenschaftliches Rechnen, wurde hierfür die binomtest-Funktion verwendet \citep{Oliphant2007}. In die Funktion wird die Gesamtanzahl der Versuchsdurchläufe und die Anzahl der Versuchsdurchläufe, in welchen der Fisch sich richtig entschieden hat, gegeben. Die Funktion gibt dann den P-Wert zurück.
 
 \section{Auswertung der Videodateien}
  Zur Auswertung der Videodateien wurde zunächst das Programm "Tool for Tracking Fish 1.5 beta" verwendet. Dieses Trackingprogramm, generierte für jede Videodatei zu jedem Zeitpunkt Position und Orientierung des Versuchstieres. Um die Entscheidung, welche Elektrode das Versuchstier ausgewählt hatte zu objektivieren, wurde ein Programm geschrieben, welches für jedes Video nach im Ergebnisteil beschriebenen Faktoren eine Entscheidung traf, ob eine Elektrode und welche Elektrode ausgewählt worden war. Diese wurden dann mit den Entscheidungen der versuchsdurchführenden Person abgeglichen.
 
-
+Außerdem wurden Receiver Operating Characteristic (ROC) Graphen erstellt. Hierbei handelt es sich um eine Technik, mit welcher man Analysestrategien bewerten und analysieren kann \citep{Fawcett2004}.
 
 
 

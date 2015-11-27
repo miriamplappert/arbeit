@@ -22,7 +22,8 @@
 \usepackage{framed} %macht einen rand um grafiken
 \usepackage{subfigure} %zwei bilder nebeneinander
 \usepackage{phaistos} %fish symbol
-\usepackage{natbib} %verwendung con \citet
+\usepackage{natbib} %verwendung von \citet und \citep
+\usepackage[breaklinks=true,bookmarks=true,bookmarksopen=true,colorlinks=true,citecolor=blue, linktoc=page]{hyperref} %package macht abbildungsverweise rot und zitierte personen blau
 \newfloat{schema}{h}{scn}
 \floatname{schema}{schema}
 
@@ -31,21 +32,13 @@
 \newfloat{Schema}{htbp}{she}[chapter]
 
 
-\setlength{\parskip}{2.5ex plus0.5ex minus0.2ex}
+\setlength{\parskip}{2.5ex plus0.5ex minus0.2ex} 
 \setlength{\parindent}{0pt}
 \setcounter{secnumdepth}{5}
 
-%\includeonly{EundD}
 
 \hyphenation{Aceto-ni-tril}
-\hyphenation{Peak-po-ten-tial-differenz}
-\hyphenation{Glas-stopfen}
-\hyphenation{Alu-mi-ni-um-o-xid}
-\hyphenation{Diffusions-koeffizienten-messung}
-\hyphenation{elektro-chemischen}
-\hyphenation{elektro-chemischen}
-\hyphenation{Ox-idations-strom}
-\hyphenation{El-ek-tro-den-ober-flaeche}
+
 
 \begin{document}
 
@@ -62,7 +55,7 @@
 \include{Einleitung}
 \include{Material}
 \include{Ergebnisse3}
-%\include{Diskussion}
+\include{Diskussion}
 \include{Danksagung}
 
 
