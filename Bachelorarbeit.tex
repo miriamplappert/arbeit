@@ -39,8 +39,22 @@
 
 \hyphenation{Aceto-ni-tril}
 
+%%%% Custom Command for floating Infoboxes
+%%%% usage: \infobox{<title>}{<text>}
+\usepackage{picins}                 
+\newcommand{\infobox}[2]{
+    \parpic(0.34\textwidth,0pt)[lf]{
+        \parbox[b]{0.32\textwidth}{
+             \bigskip {\bf #1}  \small{{{\sffamily #2}}} \bigskip
+        }
+    }
+    \bigskip
+}
+
+
 
 \begin{document}
+
 
 \include{Titelseite}
 \include{Erklaerung}
@@ -50,6 +64,7 @@
 %\setcounter{secnumdepth}{5}
 %\setcounter{tocdepth}{5} 
 
+\setcounter{tocdepth}{1} %subsections werden im inhaltsverzeichnis nicht angezeigt
 \tableofcontents
 
 \include{Einleitung}
