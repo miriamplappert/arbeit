@@ -5,10 +5,10 @@
 
 \subsection{"Ubersicht}
 
-Abbildung \ref{fig:overview1} und Abbildung \ref{fig:overview2} zeigen eine Übersicht der Versuchstage des Hauptverschs für Fisch 1 und Fisch 2. Die Abbildungen sind folgendermaßen aufgebaut: Links ist ein Balkendiagramm zu sehen. Für jeden Versuchstag ist hier die Leistung des Fisches in Prozent aufgetragen. Die verschiedenfarbigen Kästen um die Balken, zeigen, welche Unterversuche im Hauptversuch durchgeführt wurden. So wurde bei Fisch 1 (siehe Abb. \ref{fig:overview1} zunächst mit einer Signalstärke von einem Millivolt (roter Kasten) und danach mit einer Signalstärke von zwei Millivolt (grüner Kasten) gearbeitet. Der Boxplot im rechten Bereich der Abbildung zeigt die Leistungsverteilung der Versuchstiere über die gesamte Versuchszeit hinweg. Bei Fisch 2 (siehe Abb. \ref{fig:overview2}) wurden zusätzlich die acht Versuchstage der S+ und der S- Stimulus vertauscht.
+Abbildung \ref{fig:overview1} und Abbildung \ref{fig:overview2} zeigen eine Übersicht der Versuchstage des Hauptverschs für Fisch 1 und Fisch 2. Die Abbildungen sind folgendermaßen aufgebaut: Links ist ein Balkendiagramm zu sehen. Für jeden Versuchstag ist hier die Leistung des Fisches in Prozent aufgetragen. Die verschiedenfarbigen Kästen um die Balken, zeigen, welche Unterversuche im Hauptversuch durchgeführt wurden. So wurde bei Fisch 1 (siehe Abb. \ref{fig:overview1} zunächst mit einer Signalstärke von einem Millivolt (roter Kasten) und danach mit einer Signalstärke von zwei Millivolt (grüner Kasten) gearbeitet. Der Boxplot im rechten Bereich der Abbildung zeigt die Leistungsverteilung der Versuchstiere über die gesamte Hauptversuchszeit hinweg. Bei Fisch 2 (siehe Abb. \ref{fig:overview2}) wurden zusätzlich an den letzten acht Versuchstagen S+ und der S- Stimulus vertauscht (lila Kasten).
 
 
-Wie in Abbildung \ref{fig:overview1} zu sehen, hat Fisch 1 über den gesamten Versuchsdurchlauf hinweg eine mediane Leistung von ??? erbracht. Der Median von Fisch 2 liegt genau bei 50???, wobei dieser wegen Tausches des S+ und S- Stimulus eine geringe Aussagekraft hat. Im folgenden werden daher die Leistungen der beiden Versuchstiere für jeden Versuchsteil, sprich ein Millivolt, zwei Millivolt und S+ und S- vertauscht separat betrachtet.
+Wie in Abbildung \ref{fig:overview1} zu sehen, hat Fisch 1 über den gesamten Versuchsdurchlauf hinweg eine mediane Leistung von ??? erbracht. Der Median von Fisch 2 liegt genau bei 50???, wobei dieser wegen Tausches des S+ und S- Stimulus eine geringe Aussagekraft hat. Im folgenden werden daher die Leistungen der beiden Versuchstiere für jeden Versuchsteil, sprich \emph{ein Millivolt}, \emph{zwei Millivolt} und \emph{S+ und S- vertauscht} separat betrachtet.
 
 \begin{figure}[ht]
 \includegraphics[height=8.5cm]{Abbildungen/Overview1}
@@ -60,7 +60,7 @@ In den ersten Versuchstagen ist tatsächlich ein kontinuierlicher Anstieg der ric
 
 \begin{figure}[ht]
 \includegraphics[height=8.5cm]{Abbildungen/performance_chap_changed_stimuli2015albi01}
-\caption{\label{fig:getauscht}Fisch 2 vertauschte Stimuli mit Boxplot}
+\caption{\label{fig:getauscht}Die Leistung von Fisch 2, nachdem der S+ und S- Stimulus vertauscht wurden.}
 \end{figure}
 
 \subsection{Diskussion der Relacsauswertung}
@@ -103,8 +103,8 @@ Anhand eines Beispielvideos wird im Folgenden das Vorgehen bei der Videotracking
 \caption{\label{fig:path}Trackingbild. Der blaue Pfad zeigt die sicher Position des Fisches an. Bei den roten Punkten, hat das Trackingprogramm den Fisch kurzzeitig verloren, diese sind geschätzte Positionen des Trackingprogramms.}
 \end{figure}
 
-Zunächst wurde jedes Video einzeln mit dem Trackingprogramm getrackt, dabei wurden die X und Y Position im Versuchsbecken und die Orientierung des Versuchstiers für jedes Videoframe in Listen gespeichert. Außerdem wurde eine Graphik erstellt, welche den zurückgelegten Weg des Fisches zeigt (siehe Abb. \ref{fig:path}).
-In dem in Abbildung \ref{fig:path} gezeigten Beispiel war Elektrode 1, die belohnte Elektrode, die den S+ Stimulus abgab. Das Versuchstier war in diesem Beispiel Fisch 2.
+Zunächst wurde jedes Video einzeln mit dem Trackingprogramm getrackt, dabei wurden die X und Y Position im Versuchsbecken und die Orientierung des Versuchstiers für jedes Videoframe in Listen gespeichert. Außerdem wurde eine Graphik erstellt, welche den im Versuchsdurchlauf zurückgelegten Weg des Fisches zeigt (siehe Abb. \ref{fig:path}).
+In dem in Abbildung \ref{fig:path} gezeigten Beispiel war Elektrode 1 die belohnte Elektrode, die den S+ Stimulus abgab. Das Versuchstier war in diesem Beispiel Fisch 2.
 Anhand des blauen Pfades ist zu sehen, das Fisch 2 zunächst an der falschen Elektrode (Elektrode 2) vorbei geschwommen ist und sich schließlich für Elektrode 1 entschieden hat.
 Im Folgenden soll gezeigt werden, worauf diese Behauptung beruht.
 
@@ -126,10 +126,22 @@ Zunächst konnte so zum Beispiel zunächst bei jedem einzelnen Video die Entfernun
 
 \subsection{Videoübergreifende Auswertung}
 
+Um bewerten zu können, wie sicher und eindeutig die Versuchstiere insgesamt eine Elektrode auswählten, wurden im Anschluss alle Videos für jeden Fisch übergreifend ausgewertet. Hierbei wurden für Fisch 1 ? Videos ausgewertet und für Fisch 2 ? Videos. Es handelte sich demnach nach sehr großen Datenmengen.
+
+Zunächst sollte untersucht werden, welche Distanzen zu einer Elektrode bestehen, wenn sie ausgewählt wurde. Hierfür wurde um die beiden Elektroden ein Radius von 35 cm gelegt. Die daraus entstandenen Histogramme sind für Fisch 1 in Abbildung \ref{fig:histodistanzen_entscheidung1} zu sehen. Hierbei wurden für Elektrode 1 und Elektrode 2 je die richtig Positiven und die falsch Positiven aufgetragen. Unter E1 richtig positive versteht man die Distanzen zu Elektrode 1, wenn diese richtig war und vom Fisch ausgewählt wurde. Bei den E 1 falsch Positiven hingegen wurden die Distanzen zu Elektrode 1 aufgetragen, wenn Elektrode 1 falsch war aber dennoch vom Fisch gewählt wurde. Analog dazu wurden bei E2 richtig Positive und E2 falsch Postive die Distanzen zu Elektrode 2 aufgetragen.
+Fisch 1 hat dabei insgesamt eine starke Anhäufung von kurzen Distanzen, bei den E1 falsch Positiven. Das heißt er hat sich häufig nah an Elektrode 1 aufgehalten, wenn diese falsch war und er sie außgewählt hat.
+
+DISKUSSION: Mögliche Gründe dafür: möglicherweise observer bias, sprich wenn fisch noch nicht so nah an elektrode war, wurde das früher als richtige entscheidung gezählt und wenn fisch an der falschen elektrode war wurde länger gewartet. möglicherweise liegt der grund auch im ablauf: wenn der fisch die falsche elektrode ausgewöhlt hat, bekam er direkt ein feedback da der stimulus gleich aus ging. wenn der fisch richtig gewählt hat wurde das video ausgeschaltet, aber der stimulus angelassen und der fisch musste noch einige zeit an elektrode verweilen und auf die belohnung warten, was aber vom video nicht erfasst wurde. wenn der fisch in dieser zeit wieder weggeschwommen ist, wurde der versuch auch nicht als richtig gewertet.
+
+
 \begin{figure}[ht]
 \includegraphics[height=10.5cm]{Abbildungen/Histogramm_Elektrodendistanzen_mit_Fischentscheidung2015albi02}
 \caption{\label{fig:histodistanzen_entscheidung1}Fisch 1 Histogramme zur Distanz zu den Elektroden mit fischentscheidung}
 \end{figure}
+
+
+Um zu überprüfen, ob es Unterschiede in den Verteilungen gibt, wenn es richtig Positiv ist und falsch Postitiv ist. Sprich um zu überprüfen, ob die Distanzen zu den Elektroden unterschiedlich verteilt waren, je nach dem ob die Elektrode, die der Fisch ausgewählt hat, richtig oder falsch war, wurden ROC Kurven erstellt.
+Diese sind in Abbildung \ref{fig:roc_distanzen_entscheidung1} zu sehen. Es wurde jeweils eine Kurve für Elektrode 1 (siehe Abb \ref{fig:roc_distanzen_entscheidung1} (a)) und eine für Elektrode 2 (siehe Abb. \ref{fig:roc_distanzen_entscheidung1} (b) ertellt. Auf der X-Achse ist jeweils die Falsch Positiv Rate dargestellt, während auf der Y-Achse die richtig Positiv Rate aufgetragen ist. Die Abkürzung FuK steht für "Fläche unter der Kurve". Der Wert gibt also wie der Name bereits verrät die Fläche unter der ROC Kurve an. Läge der Wert bei 0,5 dann wären beide Verteilungen gleich??? Je kleiner der Wert ist desto mehr
 
 
 \begin{figure}[ht]
@@ -238,4 +250,8 @@ blablabla
 \caption{\label{fig: versuch1_zeit} Zeiten, die die Fische gebraucht haben um den Versuch erfolgreich zu beenden.}
 \end{figure}
 
+Abbildung \ref{versuch1_zeit} zeigt für alle vier Versuchstiere, welche an dem Versuch teilgenmommen haben, die mittlere Zeit, welche pro Versuchstag benötigt wurde, um den Versuch erfolgreich zu beenden. Während Fisch 1 und Fisch 2 immer kürzere Zeiten benötigen, um den Versuch zu absolvieren, schwanken Fisch 3 und Fisch 4 sehr stark in ihren Zeiten.
+
 \subsection{Diskussion der Vorversuche}
+Eine mögliche Erklärung für den 'Zickzackkurs' von Fisch 3 und Fisch 4 wäre, dass sie nach einem erfolgreichen Versuchstag am nächsten Tag keinen Hunger mehr hatten. Was dagegen spricht: Fütterung nur mit kleinen Larven und oftmals schlechte Leistungen an einem Montag, obwohl Fische gerade da hungrig sein sollten. Außerdem waren das ja gerade die großen Fische, die sowieso mehr Futter brauchen sollten als die kleinen Fische.
+
