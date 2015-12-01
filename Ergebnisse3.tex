@@ -153,7 +153,7 @@ DISKUSSION: Mögliche Gründe dafür: möglicherweise observer bias, sprich wenn fis
 
 
 Um zu überprüfen, ob es Unterschiede in den Verteilungen gibt, wenn es richtig Positiv ist und falsch Postitiv ist. Sprich um zu überprüfen, ob die Distanzen zu den Elektroden unterschiedlich verteilt waren, je nach dem ob die Elektrode, die der Fisch ausgewählt hat, richtig oder falsch war, wurden ROC Kurven erstellt.
-Diese sind in Abbildung \ref{fig:roc_distanzen_entscheidung1} zu sehen. Es wurde jeweils eine Kurve für Elektrode 1 (siehe Abb \ref{fig:roc_distanzen_entscheidung1} (a)) und eine für Elektrode 2 (siehe Abb. \ref{fig:roc_distanzen_entscheidung1} (b) ertellt. Auf der X-Achse ist jeweils die Falsch Positiv Rate dargestellt, während auf der Y-Achse die richtig Positiv Rate aufgetragen ist. Die Abkürzung FuK steht für "Fläche unter der Kurve". Der Wert gibt also wie der Name bereits verrät die Fläche unter der ROC Kurve an. Läge der Wert bei 0,5 dann wären beide Verteilungen gleich??? Je kleiner der Wert ist desto mehr
+Diese sind in Abbildung \ref{fig:roc_distanzen_entscheidung1} zu sehen. Es wurde jeweils eine Kurve für Elektrode 1 (siehe Abb \ref{fig:roc_distanzen_entscheidung1} (a)) und eine für Elektrode 2 (siehe Abb. \ref{fig:roc_distanzen_entscheidung1} (b) ertellt. Auf der X-Achse ist jeweils die Falsch Positiv Rate dargestellt, während auf der Y-Achse die richtig Positiv Rate aufgetragen ist. Die Abkürzung FuK steht für "Fläche unter der Kurve". Der Wert gibt also wie der Name bereits verrät die Fläche unter der ROC Kurve an. Läge der Wert bei 0,5 dann wären beide Verteilungen gleich??? Je kleiner der Wert ist desto mehr sind die Werte zum Falsch Positiven hin verschoben, je größer die Fläche ist, desto mehr sind die Werte zum richtig positiven verschoben.
 
 
 \begin{figure}[ht]
@@ -164,11 +164,13 @@ Diese sind in Abbildung \ref{fig:roc_distanzen_entscheidung1} zu sehen. Es wurde
 \caption{\label{fig:roc_distanzen_entscheidung1}Roc Kurven dazu von Fisch 1}
 \end{figure}
 
-
+Mit der gleichen Vorgehensweise wurde anschließend bei Fisch 2 gearbeitet. Das so entstandene Histogramm ist in Abbildung \ref{fig:histodistanzen_entscheidung2} zu sehen. Ähnlich wie bei Fisch 1 kommen auch hier bei den falsch Positiv Kategorien für Elektrode 1 und Elektrode 2 häufiger kurze Distanzen vor, als bei den richtig Positiv Kategorien.
 \begin{figure}[ht]
 \includegraphics[height=10.5cm]{Abbildungen/Histogramm_Elektrodendistanzen_mit_Fischentscheidung2015albi01}
 \caption{\label{fig:histodistanzen_entscheidung2}Fisch 2 Histogramme zur Distanz zu den Elektroden mit fischentscheidung}
 \end{figure}
+
+Auch die ROC Kurven von Fisch 2 (siehe Abb. \ref{fig:roc_distanzen_entscheidung2} sind vergleichbar mit den Kurven von Fisch 1. So beträgt die FuK von Elektrode 1 0,35 (bei Fisch 1 waren es 0,37) und bei Elektrode 2 0,41 (bei Fisch 1: 0,42).
 
 
 \begin{figure}[ht]
@@ -179,8 +181,8 @@ Diese sind in Abbildung \ref{fig:roc_distanzen_entscheidung1} zu sehen. Es wurde
 \caption{\label{fig:roc_distanzen_entscheidung2}Roc Kurven dazu von Fisch 2}
 \end{figure}
 
-
-
+Da es wie aus den FuK Werten der ROC Kurven ersichtlich offenbar keine große Rolle spielt, ob Elektrode 1 oder Elektrode 2 gewählt wurde, wurde im Folgenden Histogramme erstellt, welche unabhängig davon, welche Elektrode es war, zeigen wie die Distanzverteilung des Versuchstieres war, wenn die richtige Elektrode ausgewählt wurde und die Distanz zur richtigen Elektrode wenn die falsche Elektrode ausgewählt wurde. Das Ergebnis für Fisch 1 ist dabei in Abbildung \ref{fig:histodistanzen1} zu sehen. Abbildung \ref{fig:histodistanzen2} zeigt das gleiche für Fisch 2. Wie zu erwarten, Hielten sich die Versuchstiere häufiger nah an der richtigen Elektrode auf, wenn diese ausgewählt wurde. Dementsprechend waren die Distanzen zur richtigen Elektrode höher, wenn die falsche Elektrode ausgewählt wurde.
+Die ROC Kurven der Histogramme haben dementsprechend auch eine FuK über 0,5 (siehe Abb. \ref{fig:roc_distanzen1} für Fisch 1 und Abb. \ref{fig:roc_distanzen2} für Fisch 2. Die FuK bei Fisch 1 beträgt 0,63 während die von Fisch 2 0,73 beträgt.
 
 \begin{figure}[ht]
 \includegraphics[height=8.5cm]{Abbildungen/Histogramm_Elektrodendistanzen3_2015albi02}
@@ -203,19 +205,34 @@ Diese sind in Abbildung \ref{fig:roc_distanzen_entscheidung1} zu sehen. Es wurde
 \caption{\label{fig:roc_distanzen2}Roc Kurven Distanzen Fisch 2}
 \end{figure}
 
-\begin{figure}[ht]
-\includegraphics[height=8.5cm]{Abbildungen/Velocityboxplot2015albi02}
-\caption{\label{fig: boxplot_geschwindigkeit1} Fisch 1}
-\end{figure}
+Ein weiterer Faktor, welcher zur Bewertung, ob die Fische eine Elektrode ausgewählt haben herbeigezogen wurde, war die Schwimmgeschwindigkeit. Dafür wurden zunächst die Geschwindigkeiten nahe der Elektroden mit den Geschwindigkeiten entfernt von den Elektroden verglichen. Als nahe den Elektroden wurde eine Distanz zu den Elektroden von maximal 12 Zentimetern festgelegt. Jede größere Distanz und die dazu gehörige Geschwindigkeit wurde zu entfernt von den Elektroden gezählt. Abbildung \ref{fig: boxplot_geschwindigkeit} (a) zeigt in Form eines Boxplots die Verteilung der Schwimmgeschwindigkeiten von Fisch 1 in der Nähe und entfernt von den Elektroden. Die mediane Schwimmgeschwindigkeit in der Nähe der Elektroden betrug dabei 6,34 Zentimeter pro Sekunde. Der Median der entfernten Geschwindigkeit hingegen lag bei 8,21.
+Ein Mann-Whitney U test Test ergab hierbei einen P-Wert von 0. Bei einer Datenmenge von 118538 Werten.
+Für Fisch 2 zeigt sich ähnliches: Wie in Abbildung \ref{fig: boxplot_geschwindigkeit} (b) zu sehen, war die Schwimmgeschwindigkeit von Fisch 2 ebenfalls in der Nähe der Elektroden niedriger. So ergab sich hier ein Median von 3,44 Zentimeter pro Sekunde in der Nähe der Elektroden, während die mediane Geschwindigkeit entfernt von den Elektroden 6,01 Zentimeter pro Sekunde betrug. Der Mann-Whitney U test Test ergab hier ebenfalls einen P-Wert von 0 bei einer Datenmenge von 89265 Werten.
+
 
 \begin{figure}[ht]
-\includegraphics[height=8.5cm]{Abbildungen/Velocityboxplot2015albi01}
-\caption{\label{fig: boxplot_geschwindigkeit2} Fisch 2}
+\subfigure [Fisch 1]
+{\includegraphics[height=6cm]{Abbildungen/Velocityboxplot2015albi02}}
+\subfigure[Fisch 2]
+{\includegraphics[height=6cm]{Abbildungen/Velocityboxplot2015albi01}}
+\subfigure[Fisch 4]
+{\includegraphics[height=6cm]{Abbildungen/Velocityboxplot2013albi14}}
+\subfigure[Fisch 6]
+{\includegraphics[height=6cm]{Abbildungen/Velocityboxplot2012albi01}}
+\caption{\label{fig: boxplot_geschwindigkeit} Geschwindigkeits Boxplots}
 \end{figure}
+
+Bei Fisch 4 (siehe Abb. \ref{fig: boxplot_geschwindigkeit} (c) und Fisch 6 (siehe Abb. \ref{fig: boxplot_geschwindigkeit} (d) hingegen zeigt sich eine umgekehrte Tendenz: Hier sind die Fische an den Elektroden sogar etwas schnelle (Median in der Nähe der Elektroden: Fisch 4: 11,8 Zentimeter pro Sekunde, Fisch 6: 9,81 Zentimeter pro Sekunde.
+
+Median entfernt von den Elektroden: Fisch 4: 9,15 Zentimeter pro Sekunde, Fisch 6: 9,03 Zentimeter pro Sekunde. Grund hierfür ist vermutlich, dass die Fische im Gegensatz zu Fisch 1 und 2 die Aufgabe nicht verstanden haben. Da die Elektroden an den an den Beckenlängsseiten angebracht ist, schwimmen die Fische dort vermutlich schnell vorbei.
+Mann-Whitney U test Test: P-Wert Fisch 4: 4,85 x 10 hoch -20, datenmenge von 35176
+Mann-Whitney U test Test: P-Wert Fisch 6: 0,00073, datenmenge von 50465
+
+Für Fisch 1 und Fisch 2 wurden dann nochmal die Geschwindigkeiten an ELektrode 1 und 2 verglichen, wenn die Elektrode richtig und ausgewählt war mit dem Fall, dass die Elektrode Falsch und ausgewählt war. Abbildung \ref{fig: histo_geschwindigkeit1} zeigt dazu die Histogramme für Fisch 1. Wie in der Abbbildung zu sehen, unterscheiden sich die Histogramme nicht wesentlich voneinander. Auch die ROC Kurven für Elektrode 1 (siehe Abb. \ref{fig:roc_geschwindigkeiten_entscheidung1}) und für Elektrode 2 \ref{fig:roc_geschwindigkeiten_entscheidung2} fallen dementsprechend aus: Mit einer FuK von 0,45 bzw. 0,44 zeigen beide ROC Kurven, dass sich die Histogramme nicht wesentlich voneinander unterscheiden, egal ob der Fisch die richtige oder die Falsche Elektrode ausgewählt hat.
 
 \begin{figure}[ht]
 \includegraphics[height=10.5cm]{Abbildungen/Histogramm_Geschwindigkeiten_mit_Fischentscheidung2015albi02}
-\caption{\label{fig: hosto_geschwindigkeit1} Fisch 1}
+\caption{\label{fig: histo_geschwindigkeit1} Fisch 1}
 \end{figure}
 
 \begin{figure}[ht]
@@ -226,10 +243,13 @@ Diese sind in Abbildung \ref{fig:roc_distanzen_entscheidung1} zu sehen. Es wurde
 \caption{\label{fig:roc_geschwindigkeiten_entscheidung1}Roc Kurven Geschwindigkeiten mit Entscheidung von Fisch 1}
 \end{figure}
 
+Analog dazu wurden auch für Fisch 2 die entsprechenden Histogramme erstellt, wie in Abbildung \ref{fig: histo_geschwindigkeit2} zu sehen. Hier unterscheiden sich die Histogramme auf den ersten Blick etwas stärker, so ist das Peak bei E1 falsch und ausgewählt etwas höher als bei E1 richtig und ausgewählt.
+Die ROC Kurven (siehe Abb. \ref{fig:roc_geschwindigkeiten_entscheidung2}) aber zeigen, dass auch hier kein nennenswerter Unterschied besteht. So beträgt die FuK bei Elektrode 1 0,41 und bei Elektrode 2 0,45.
+
 
 \begin{figure}[ht]
 \includegraphics[height=10.5cm]{Abbildungen/Histogramm_Geschwindigkeiten_mit_Fischentscheidung2015albi01}
-\caption{\label{fig: hosto_geschwindigkeit2} Fisch 2}
+\caption{\label{fig: histo_geschwindigkeit2} Fisch 2}
 \end{figure}
 
 \begin{figure}[ht]
@@ -244,6 +264,8 @@ Diese sind in Abbildung \ref{fig:roc_distanzen_entscheidung1} zu sehen. Es wurde
 \subsection{Diskussion der Trackingauswertung}
 
 blablabla
+
+Geschwindigkeitsboxplots: Fisch 4 und Fisch 6 generell schneller als Fisch 1 und 2. Möglicher Grund: Aufgeregt, unwohl gefühlt auf offener Fläche?
 
 
 \section{Auswertung der Vorversuche}
