@@ -155,13 +155,13 @@ Zur schrittweisen Vorbereitung auf den Hauptversuch durchliefen die Versuchstier
 
 \subsection{Eingewöhnung}
 Ziel des Versuchs war die Gewöhnung der Tiere an das Versuchsbecken und an die Fütterung an den Stimuluselektroden. 
-Die Aufgabe des Versuchstieres bestand darin, die Startbox aus Eigeninitative zu verlassen und die an den Elektroden platzierten Mückenlarven zu finden und zu fressen. Mittels Münzwurf wurde vor jedem Durchlauf entschieden, an welcher Elektrode die Mückenlarve platziert wurde. Die Larve wurde dabei auf den Beckenboden direkt unter der jeweiligen Elektrode gelegt. Falls der Fisch die Startbox nicht verließ wurde der Versuch nach 20 Minuten abgebrochen.
+Die Aufgabe des Versuchstieres bestand darin, die Startbox aus Eigeninitative zu verlassen und die an den Elektroden platzierten Mückenlarven zu finden und zu fressen. Mittels Münzwurf wurde vor jedem Durchlauf entschieden, an welcher Elektrode die Mückenlarve platziert wurde. Die Larve wurde dabei auf den Beckenboden direkt unter der jeweiligen Elektrode gelegt. Falls der Fisch die Startbox nicht verließ wurde der Versuch nach 20 Minuten abgebrochen, gleiches galt für die anderen Vorversuche.
 Ein Versuchsdurchlauf galt als erfolgreich, wenn der Fisch die Startbox aus eigenem Antrieb verließ und die Larve fraß.
 
-\subsection{Konditionierung auf den gewünschten Reiz}
+\subsection{Konditionierung auf den belohnten Stimulus (S+)}
 Die Tiere sollten eine Verknüpfung zwischen dem gewünschtem Signal und der Fütterung herstellen. Im Vergleich zum ersten Vorversuch gab nun eine der beiden Elektroden den S+ Stimulus ab. Welche der Elektroden den Stimulus abgab, wurde zufällig durch das Relacs Repro "Dual Beat" bestimmt. Die andere Elektrode gab kein Signal ab. Zunächst wurde die Larve vor dem Öffnen der Startbox an der Elektrode mit dem belohnten Reiz gelegt. Nachdem die Versuchstiere sich an den Ablauf gewöhnt hatten, wurde die Belohnung mit einer Pipette gegeben. Ein Durchlauf wurde als erfolgreich notiert, wenn der Fisch die Startbox freiwillig verließ und die Larve an der Elektrode gefressen wurde, solange der Stimulus mit einer Dauer von 200 Sekunden noch aktiv war.
 
-\subsection{Gewöhnung an den zweiten Stimulus}
+\subsection{Gewöhnung an den unbelohnten Stimulus (S-)}
 Die letzte Stufe vor dem Hauptversuch sollte die Fische daran gewöhnen, dass nun beide Elektroden ein Signal sendeten. Neben dem S+ Stimulus wurde nun auch der S- Stimulus abgegeben. Außerdem wurde das Setup in einen anderen Raum verlegt, da in diesem Raum die Aufnahme der Versuche auf Video möglich war. Zunächst wurden die Versuchstiere direkt belohnt, wenn sie sich in der Nähe der Elektrode aufhielten. Später wurden sie erst belohnt, nachdem die Elektrode eindeutig ausgewählt worden war. Der Stimulus dauerte mit 200 Sekunden länger als im Hauptversuch (60 Sekunden) an.
 
 
@@ -175,7 +175,10 @@ Aus dem Scipy Paket, einer Sammlung mehrerer Python Open-Source- Pakete für wiss
 \section{Auswertung der Videodateien}
  Zur Auswertung der Videodateien wurde zunächst das Programm "Tool for Tracking Fish 1.5 beta" verwendet. Dieses Trackingprogramm, generierte für jede Videodatei zu jedem Zeitpunkt Position und Orientierung des Versuchstieres.
  
-Mann?Whitney-U-Test aus dem stats.skipy Packet mit dem Befehl $mannwithneyu(x,y,use_continuity=True)$
+Mann?Whitney-U-Test aus dem stats.skipy Packet mit der $mannwithneyu$ Funktion
+
+
+Students T-Test: scipy stats $ttest_ind$
 
 
 Außerdem wurden Receiver Operating Characteristic (ROC) Graphen erstellt. Hierbei handelt es sich um eine Technik, mit welcher man Analysestrategien bewerten und analysieren kann \citep{Fawcett2004}.
