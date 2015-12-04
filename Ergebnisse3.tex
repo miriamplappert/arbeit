@@ -97,39 +97,29 @@ Insgesamt erreichte Fisch 2 an fünf der acht Versuchstage einen Rate an richtige
 
 
 \section{Hauptversuch - Videotrackingauswertung}
-Jeder Versuchsdurchlauf wurde beim Hauptversuch auf Video aufgenommen. Dabei wurde das Video gestartet, bevor die Startbox geöffnet wurde. Beendet wurde das Video bevor die Belohnung stattfand oder der Fisch zurück in die Startbox geführt wurde.
-Die Videodateien wurden dann wie bereits im Kapitel Datenanalyse erläutert mit Hilfe eines Trackingprogramms analysiert.
-
-
-%%%%%% IN DAS TRACKINGBILD NOCH BESCHRIFTUNGEN EINFÜGEN MIT ELEKTRODE 1; ELEKTRODE2, 	TOR ZUR STARTBOX
+Jeder Versuchsdurchlauf des Hauptversuchs wurde auf Video aufgenommen. Dabei wurde das Video gestartet, bevor die Startbox geöffnet wurde. Beendet wurde das Video bevor die Belohnung stattfand oder der Fisch zurück in die Startbox geführt wurde.
+Die Videodateien wurden dann, wie bereits im Kapitel Datenanalyse erläutert, mit Hilfe eines Trackingprogramms analysiert.
 
 \subsection{Einzelvideoauswertung anhand eines Beispielvideos}
 
-Anhand eines Beispielvideos wird im Folgenden das Vorgehen bei der Videotrackingauswertung gezeigt:
+Im Folgenden wird zunächst anhand der Auswertung eines einzelnen Beispielvideos erläutert, wie die Auswertung aller Videos ablief und welche Parameter zur Bewertung eines Versuchsdurchlaufs wichtig sind.
 
 \begin{figure}[ht]
 \centering
 \includegraphics[height=8.5cm]{Abbildungen/2015-08-18_1_OV_path}
-\caption{\label{fig:path}Trackingbild. Der blaue Pfad zeigt die sicher Position des Fisches an. Bei den roten Punkten, hat das Trackingprogramm den Fisch kurzzeitig verloren, diese sind geschätzte Positionen des Trackingprogramms.}
+\caption{\label{fig:path} Ergebnissbild des Videotrackingprogramms. Das Trackingprogramm erstellt für jedes getrackte Video, ein Bild, welches den zurückgelegten Weg des Fisches zeigt. Die blauen Punkte sind Postitionen, an welchen sich das Versuchstier sicher befand. Die roten Punkte sind geschätzte Positionen, an welchen das Trackingprogramm den Fisch kurzzeitig verloren hatte.}
 \end{figure}
 
-Zunächst wurde jedes Video einzeln mit dem Trackingprogramm getrackt, dabei wurden die X und Y Position im Versuchsbecken und die Orientierung des Versuchstiers für jedes Videoframe in Listen gespeichert. Außerdem wurde eine Graphik erstellt, welche den im Versuchsdurchlauf zurückgelegten Weg des Fisches zeigt (siehe Abb. \ref{fig:path}).
-In dem in Abbildung \ref{fig:path} gezeigten Beispiel war Elektrode 1 die belohnte Elektrode, die den S+ Stimulus abgab. Das Versuchstier war in diesem Beispiel Fisch 2.
-Anhand des blauen Pfades ist zu sehen, das Fisch 2 zunächst an der falschen Elektrode (Elektrode 2) vorbei geschwommen ist und sich schließlich für Elektrode 1 entschieden hat.
-Im Folgenden soll gezeigt werden, worauf diese Behauptung beruht.
+Zunächst wurde das Video mit dem Trackingprogramm getrackt, dabei wurden die X und Y Position im Versuchsbecken und die Orientierung des Versuchstiers für jedes Videoframe in jeweils einer Liste gespeichert. Außerdem wurde eine Graphik erstellt, welche den während des Versuchsdurchlaufs zurückgelegten Weg des Fisches zeigt (siehe Abb. \ref{fig:path}).
+In dem hier dargestellten Versuchsdurchlauf von Fisch 2 gab Elektrode 1 den belohnten Stimulus ab. Anhand des blauen Pfades in Abbildung \ref{fig:path} ist zu sehen, dass Fisch 2 zunächst Elektrode 2 passierte und anschließend bei Elektrode 1 im Kreis geschwommen ist. Im Folgenden sollten Parameter gefunden werden, welche anzeigen, dass eine Elektrode ausgewählt wurde.
 
 \begin{figure}
-\subfigure[Distanz zu Elektrode 1 über die Zeit]{\includegraphics[height=5.5cm]{Abbildungen/distance_time_plot_2015-08-18_1_electrode1}}
-\subfigure[Distanz zu Elektrode 2 über die Zeit]{\includegraphics[height=5.5cm]{Abbildungen/distance_time_plot_2015-08-18_1_electrode2}}
-\caption{\label{fig:distanzen}Versuchsaufbau}
+\subfigure[Elektrode 1]
+{\includegraphics[height=5.5cm]{Abbildungen/distance_time_plot_2015-08-18_1_electrode1}}
+\subfigure[Elektrode 2]
+{\includegraphics[height=5.5cm]{Abbildungen/distance_time_plot_2015-08-18_1_electrode2}}
+\caption{\label{fig:distanzen}Die Distanzen im Beispielversuchsdurchlauf von Fisch 2 zu Elektrode 1 (a) und Elektrode 2 (b)über die Zeit.}
 \end{figure}
-
-
-Zunächst konnte so zum Beispiel zunächst bei jedem einzelnen Video die Entfernungen zu Elektrode 1 und Elektrode 2 berechnet werden. Abbildung \ref{fig:distanzen} zum Beispiel zeigt für das Videobeispiel die Distanzen zu Elektrode 1 und zu Elektrode 2. 
-Bei Abbildung \ref{fig:distanzen} (a) Ist zu sehen, dass die Distanz zu Elektrode 1 über die Zeit abnimmt. Bei Abbildung \ref{fig:distanzen} (b) hingegen sieht man, dass die Distanz zu Elektrode 2 nur kurz abnimmt, nämlich zu dem Zeitpunkt, an dem der Fisch an Elektrode 2 vorbei schwimmt und dann wieder zunimmt.
-
-
-%%%%%%%%%%%BEIM ORIENTIERUNGS BILD UMBEDINGT NOCH DAS GANZE BECKEN ZEIGEN UND EVTL TRACKINGBILD DRUNTER LEGEN%%%%%%%%%%%
 
 \begin{figure}[ht]
 \centering
@@ -137,10 +127,34 @@ Bei Abbildung \ref{fig:distanzen} (a) Ist zu sehen, dass die Distanz zu Elektrod
 \caption{\label{fig:orientierung}Orientierung}
 \end{figure}
 
+Um zu überprüfen, ob und wie nah sich das Versuchstier bei einem Versuchsdurchlauf an den Elektroden befand, wurden daher zunächst die Distanzen des Versuchstiers zu jeder Elektrode zu jedem Zeitpunkt berechnet. Abbildung \ref{fig:distanzen} zeigt hierbei die für das Beispielvideo entstandenen Graphen, wobei in (a) die Distanz zu Elektrode 1 und in (b) die Distanz zu Elektrode 2 über die Zeit aufgetragen ist. Hierbei wird sichtbar, dass sich Fisch 2 im Beispiel auf lange Sicht Elektrode 1 annähert, während sich die Distanz zu Elektrode 2 nur kurz verringert.
+Im weiteren wurden die Orientierung des Versuchstieres zu den Elektroden und die Schwimmgeschwindigkeit des Versuchstieres an den Elektroden untersucht. In Abbildung \ref{fig:orientierung} sind die Orientierungen des Fisches an den Elektroden mittles blauer Pfeile aufgetragen. Die Länge der Pfeile kodiert dabei die Geschwindigkeit. Wie in der Abbildung zu sehen, schwamm Fisch 2 zunächst im 90 Gradwinkel an Elektrode 2 vorbei und orientierte sich dann mehrfach zu Elektrode 1 hin. Desweiteren ist anhand der Pfeillängen zu beobachten, dass das Versuchstier kurz vorm Erreichen beider Elektroden seine Geschwindigkeit verringert. 
 
 \subsection{Videoübergreifende Auswertung}
 
-Um bewerten zu können, wie sicher und eindeutig die Versuchstiere insgesamt eine Elektrode auswählten, wurden im Anschluss alle Videos für jeden Fisch übergreifend ausgewertet. Hierbei wurden für Fisch 1 ? Videos ausgewertet und für Fisch 2 ? Videos. Es handelte sich demnach nach sehr großen Datenmengen.
+Im nächsten Schritt sollten die in der Einzelvideoauswertung erlangten Erkenntnisse genutzt werden, um nun alle Videos eines Versuchstieres quantitativ auswerten zu können. Da wie in der Einzelvideoauswertung aufgezeigt die Distanz zu den Elektroden und die Schwimmgeschwindigkeit an den Elektroden wichtige Faktoren zu Bewertung der Auswahl einer Elektrode darstellen, wurden im weiteren diese beiden Faktoren betrachtet. Die Orientierung des Fisches eignet sich weniger zur Standardisierung, da diese sich häufig ändert und kein deutliches Muster bei der Auswahl einer Elektrode erkennbar war.
+
+Dabei wurden bei Fisch 1 insgesamt 274 Videos und bei Fisch 2 eine Anzahl von 324 Videos ausgewertet.
+Die Datensätze für Fisch 4 und Fisch 6 waren wegen geringer kooporation bei den Versuchen mit 42 Videos für Fisch 4 und 82 Videos für Fisch 6 wesentlich kleiner.
+
+\begin{figure}[ht]
+\subfigure[Fisch 1]
+{\includegraphics[height=5.5cm]{Abbildungen/Histogramm_Elektrodendistanzen3_2015albi02}}
+\subfigure[Fisch2]
+{\includegraphics[height=5.5cm]{Abbildungen/Histogramm_Elektrodendistanzen3_2015albi01}}
+\caption{\label{fig:histodistanzen}Histogramme Distanz zu den Elektroden}
+\end{figure}
+
+\begin{figure}[ht]
+\subfigure[Fisch1]
+{\includegraphics[height=5.5cm]{Abbildungen/roc_curve_E1Distanz22015albi02}}
+\subfigure[Fisch 2]
+{\includegraphics[height=5.5cm]{Abbildungen/roc_curve_E1Distanz22015albi01}}
+\caption{\label{fig:roc_distanzen}Roc Kurven Distanzen}
+\end{figure}
+
+Da es wie aus den FuK Werten der ROC Kurven ersichtlich offenbar keine große Rolle spielt, ob Elektrode 1 oder Elektrode 2 gewählt wurde, wurde im Folgenden Histogramme erstellt, welche unabhängig davon, welche Elektrode es war, zeigen wie die Distanzverteilung des Versuchstieres war, wenn die richtige Elektrode ausgewählt wurde und die Distanz zur richtigen Elektrode wenn die falsche Elektrode ausgewählt wurde. Das Ergebnis für Fisch 1 ist dabei in Abbildung \ref{fig:histodistanzen} (a) zu sehen. Abbildung \ref{fig:histodistanzen} (b) zeigt das gleiche für Fisch 2. Wie zu erwarten, Hielten sich die Versuchstiere häufiger nah an der richtigen Elektrode auf, wenn diese ausgewählt wurde. Dementsprechend waren die Distanzen zur richtigen Elektrode höher, wenn die falsche Elektrode ausgewählt wurde.
+Die ROC Kurven der Histogramme haben dementsprechend auch eine FuK über 0,5 (siehe Abb. \ref{fig:roc_distanzen} (a) für Fisch 1 und Abb. \ref{fig:roc_distanzen} (b) für Fisch 2. Die FuK bei Fisch 1 beträgt 0,63 während die von Fisch 2 0,73 beträgt.
 
 Zunächst sollte untersucht werden, welche Distanzen zu einer Elektrode bestehen, wenn sie ausgewählt wurde. Hierfür wurde um die beiden Elektroden ein Radius von 35 cm gelegt. Die daraus entstandenen Histogramme sind für Fisch 1 in Abbildung \ref{fig:histodistanzen_entscheidung1} zu sehen. Hierbei wurden für Elektrode 1 und Elektrode 2 je die richtig Positiven und die falsch Positiven aufgetragen. Unter E1 richtig positive versteht man die Distanzen zu Elektrode 1, wenn diese richtig war und vom Fisch ausgewählt wurde. Bei den E 1 falsch Positiven hingegen wurden die Distanzen zu Elektrode 1 aufgetragen, wenn Elektrode 1 falsch war aber dennoch vom Fisch gewählt wurde. Analog dazu wurden bei E2 richtig Positive und E2 falsch Postive die Distanzen zu Elektrode 2 aufgetragen.
 Fisch 1 hat dabei insgesamt eine starke Anhäufung von kurzen Distanzen, bei den E1 falsch Positiven. Das heißt er hat sich häufig nah an Elektrode 1 aufgehalten, wenn diese falsch war und er sie außgewählt hat.
@@ -183,24 +197,6 @@ Auch die ROC Kurven von Fisch 2 (siehe Abb. \ref{fig:roc_distanzen_entscheidung2
 %\caption{\label{fig:roc_distanzen_entscheidung2}Roc Kurven dazu von Fisch 2}
 %\end{figure}
 
-Da es wie aus den FuK Werten der ROC Kurven ersichtlich offenbar keine große Rolle spielt, ob Elektrode 1 oder Elektrode 2 gewählt wurde, wurde im Folgenden Histogramme erstellt, welche unabhängig davon, welche Elektrode es war, zeigen wie die Distanzverteilung des Versuchstieres war, wenn die richtige Elektrode ausgewählt wurde und die Distanz zur richtigen Elektrode wenn die falsche Elektrode ausgewählt wurde. Das Ergebnis für Fisch 1 ist dabei in Abbildung \ref{fig:histodistanzen} (a) zu sehen. Abbildung \ref{fig:histodistanzen} (b) zeigt das gleiche für Fisch 2. Wie zu erwarten, Hielten sich die Versuchstiere häufiger nah an der richtigen Elektrode auf, wenn diese ausgewählt wurde. Dementsprechend waren die Distanzen zur richtigen Elektrode höher, wenn die falsche Elektrode ausgewählt wurde.
-Die ROC Kurven der Histogramme haben dementsprechend auch eine FuK über 0,5 (siehe Abb. \ref{fig:roc_distanzen} (a) für Fisch 1 und Abb. \ref{fig:roc_distanzen} (b) für Fisch 2. Die FuK bei Fisch 1 beträgt 0,63 während die von Fisch 2 0,73 beträgt.
-
-\begin{figure}[ht]
-\subfigure[Fisch 1]
-{\includegraphics[height=5.5cm]{Abbildungen/Histogramm_Elektrodendistanzen3_2015albi02}}
-\subfigure[Fisch2]
-{\includegraphics[height=5.5cm]{Abbildungen/Histogramm_Elektrodendistanzen3_2015albi01}}
-\caption{\label{fig:histodistanzen}Histogramme Distanz zu den Elektroden}
-\end{figure}
-
-\begin{figure}[ht]
-\subfigure[Fisch1]
-{\includegraphics[height=5.5cm]{Abbildungen/roc_curve_E1Distanz22015albi02}}
-\subfigure[Fisch 2]
-{\includegraphics[height=5.5cm]{Abbildungen/roc_curve_E1Distanz22015albi01}}
-\caption{\label{fig:roc_distanzen}Roc Kurven Distanzen}
-\end{figure}
 
 Ein weiterer Faktor, welcher zur Bewertung, ob die Fische eine Elektrode ausgewählt haben herbeigezogen wurde, war die Schwimmgeschwindigkeit. Dafür wurden zunächst die Geschwindigkeiten nahe der Elektroden mit den Geschwindigkeiten entfernt von den Elektroden verglichen. Als nahe den Elektroden wurde eine Distanz zu den Elektroden von maximal 12 Zentimetern festgelegt. Jede größere Distanz und die dazu gehörige Geschwindigkeit wurde zu entfernt von den Elektroden gezählt. Abbildung \ref{fig: boxplot_geschwindigkeit} (a) zeigt in Form eines Boxplots die Verteilung der Schwimmgeschwindigkeiten von Fisch 1 in der Nähe und entfernt von den Elektroden. Die mediane Schwimmgeschwindigkeit in der Nähe der Elektroden betrug dabei 6,34 Zentimeter pro Sekunde. Der Median der entfernten Geschwindigkeit hingegen lag bei 8,21.
 Ein Mann-Whitney U test Test ergab hierbei einen P-Wert von 0. Bei einer Datenmenge von 118538 Werten.
