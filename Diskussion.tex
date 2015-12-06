@@ -41,9 +41,50 @@ warum könnte der S- stimulus für fisch 2 attraktiver sein? Natürliche Präferenz?
 
 \subsection{Diskussion der Trackingauswertung}
 
-blablabla
+\subsubsection{Distanz zu den Elektroden Histos mit entscheidung}
+
+\begin{figure}[ht]
+\subfigure[Histogramme]
+{\includegraphics[height=8.5cm]{Abbildungen/Histogramm_Elektrodendistanzen_mit_Fischentscheidung2015albi02}}
+\subfigure[Roc Kurve Elektrode 1]
+{\includegraphics[height=5.5cm]{Abbildungen/roc_curve_E1Distanz2015albi02}}
+\subfigure[Roc Kurve Elektrode 2]
+{\includegraphics[height=5.5cm]{Abbildungen/roc_curve_E2Distanz2015albi02}}
+\caption{\label{fig:distanzen_entscheidung}Histogramme und Roc Kurven dazu von Fisch 1}
+\end{figure}
+
+Zunächst sollte untersucht werden, welche Distanzen zu einer Elektrode bestehen, wenn sie ausgewählt wurde. Hierfür wurde um die beiden Elektroden ein Radius von 35 cm gelegt. Die daraus entstandenen Histogramme sind für Fisch 1 in Abbildung \ref{fig:histodistanzen_entscheidung} (a) zu sehen. Hierbei wurden für Elektrode 1 und Elektrode 2 je die richtig Positiven und die falsch Positiven aufgetragen. Unter E1 richtig positive versteht man die Distanzen zu Elektrode 1, wenn diese richtig war und vom Fisch ausgewählt wurde. Bei den E 1 falsch Positiven hingegen wurden die Distanzen zu Elektrode 1 aufgetragen, wenn Elektrode 1 falsch war aber dennoch vom Fisch gewählt wurde. Analog dazu wurden bei E2 richtig Positive und E2 falsch Postive die Distanzen zu Elektrode 2 aufgetragen.
+Fisch 1 hat dabei insgesamt eine starke Anhäufung von kurzen Distanzen, bei den E1 falsch Positiven. Das heißt er hat sich häufig nah an Elektrode 1 aufgehalten, wenn diese falsch war und er sie außgewählt hat
+
+
+Um zu überprüfen, ob es Unterschiede in den Verteilungen gibt, wenn es richtig Positiv ist und falsch Postitiv ist. Sprich um zu überprüfen, ob die Distanzen zu den Elektroden unterschiedlich verteilt waren, je nach dem ob die Elektrode, die der Fisch ausgewählt hat, richtig oder falsch war, wurden ROC Kurven erstellt.
+Diese sind in Abbildung \ref{fig:distanzen_entscheidung} (b) zu sehen. Es wurde jeweils eine Kurve für Elektrode 1 (siehe Abb \ref{fig:distanzen_entscheidung} (b)) und eine für Elektrode 2 (siehe Abb. \ref{fig:distanzen_entscheidung} (c) ertellt. Auf der X-Achse ist jeweils die Falsch Positiv Rate dargestellt, während auf der Y-Achse die richtig Positiv Rate aufgetragen ist. Die Abkürzung FuK steht für "Fläche unter der Kurve". Der Wert gibt also wie der Name bereits verrät die Fläche unter der ROC Kurve an. Läge der Wert bei 0,5 dann wären beide Verteilungen gleich??? Je kleiner der Wert ist desto mehr sind die Werte zum Falsch Positiven hin verschoben, je größer die Fläche ist, desto mehr sind die Werte zum richtig positiven verschoben.
+
+Mit der gleichen Vorgehensweise wurde anschließend bei Fisch 2 gearbeitet. Das so entstandene Histogramm ist in Abbildung \ref{fig:histodistanzen_entscheidung2} zu sehen. Ähnlich wie bei Fisch 1 kommen auch hier bei den falsch Positiv Kategorien für Elektrode 1 und Elektrode 2 häufiger kurze Distanzen vor, als bei den richtig Positiv Kategorien.
+Auch die ROC Kurven von Fisch 2 (siehe Abb. \ref{fig:roc_distanzen_entscheidung2} sind vergleichbar mit den Kurven von Fisch 1. So beträgt die FuK von Elektrode 1 0,35 (bei Fisch 1 waren es 0,37) und bei Elektrode 2 0,41 (bei Fisch 1: 0,42).
+
+DISKUSSION: Mögliche Gründe dafür: möglicherweise observer bias, sprich wenn fisch noch nicht so nah an elektrode war, wurde das früher als richtige entscheidung gezählt und wenn fisch an der falschen elektrode war wurde länger gewartet. möglicherweise liegt der grund auch im ablauf: wenn der fisch die falsche elektrode ausgewöhlt hat, bekam er direkt ein feedback da der stimulus gleich aus ging. wenn der fisch richtig gewählt hat wurde das video ausgeschaltet, aber der stimulus angelassen und der fisch musste noch einige zeit an elektrode verweilen und auf die belohnung warten, was aber vom video nicht erfasst wurde. wenn der fisch in dieser zeit wieder weggeschwommen ist, wurde der versuch auch nicht als richtig gewertet.
 
 Geschwindigkeitsboxplots: Fisch 4 und Fisch 6 generell schneller als Fisch 1 und 2. Möglicher Grund: Aufgeregt, unwohl gefühlt auf offener Fläche?
+
+
+\section{Geschwindigkeitshistos}
+Für Fisch 1 und Fisch 2 wurden dann nochmal die Geschwindigkeiten an ELektrode 1 und 2 verglichen, wenn die Elektrode richtig und ausgewählt war mit dem Fall, dass die Elektrode Falsch und ausgewählt war. Abbildung \ref{fig:geschwindigkeiten_entscheidung} (a) zeigt dazu die Histogramme für Fisch 1. Wie in der Abbbildung zu sehen, unterscheiden sich die Histogramme nicht wesentlich voneinander. Auch die ROC Kurven für Elektrode 1 (siehe Abb. \ref{fig:geschwindigkeiten_entscheidung} b ) und für Elektrode 2 \ref{fig:geschwindigkeiten_entscheidung c} fallen dementsprechend aus: Mit einer FuK von 0,45 bzw. 0,44 zeigen beide ROC Kurven, dass sich die Histogramme nicht wesentlich voneinander unterscheiden, egal ob der Fisch die richtige oder die Falsche Elektrode ausgewählt hat.
+
+\begin{figure}[ht]
+\subfigure[Histos]
+{\includegraphics[height=8.5cm]{Abbildungen/Histogramm_Geschwindigkeiten_mit_Fischentscheidung2015albi02}}
+\subfigure[Roc Kurve Elektrode 1]
+{\includegraphics[height=5.5cm]{Abbildungen/roc_curve_E1Geschwindigkeit2015albi02}}
+\subfigure[Roc Kurve Elektrode 2]
+{\includegraphics[height=5.5cm]{Abbildungen/roc_curve_E2Geschwindigkeit2015albi02}}
+\caption{\label{fig:geschwindigkeiten_entscheidung}Roc Kurven Geschwindigkeiten mit Entscheidung von Fisch 1}
+\end{figure}
+
+Analog dazu wurden auch für Fisch 2 die entsprechenden Histogramme erstellt, wie in Abbildung \ref{fig: histo_geschwindigkeit2} zu sehen. Hier unterscheiden sich die Histogramme auf den ersten Blick etwas stärker, so ist das Peak bei E1 falsch und ausgewählt etwas höher als bei E1 richtig und ausgewählt.
+Die ROC Kurven (siehe Abb. \ref{fig:roc_geschwindigkeiten_entscheidung2}) aber zeigen, dass auch hier kein nennenswerter Unterschied besteht. So beträgt die FuK bei Elektrode 1 0,41 und bei Elektrode 2 0,45.
+
+\section{Allgemeines}
 
 \begin{figure}[ht]
 \includegraphics[height=8.5cm]{Abbildungen/eod_boxplot}
