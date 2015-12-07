@@ -1,21 +1,138 @@
 \chapter{Diskussion}
 
-\subsection{Diskussion der Vorversuche}
-Daraus lässt sich schließen, dass Fisch 1 und Fisch 2 lernten, dass an den Elekrtroden Futter zu finden war.
-Eine mögliche Erklärung für den 'Zickzackkurs' von Fisch 3 und Fisch 4 wäre, dass sie nach einem erfolgreichen Versuchstag am nächsten Tag keinen Hunger mehr hatten. Was dagegen spricht: Fütterung nur mit kleinen Larven und oftmals schlechte Leistungen an einem Montag, obwohl Fische gerade da hungrig sein sollten. Außerdem waren das ja gerade die großen Fische, die sowieso mehr Futter brauchen sollten als die kleinen Fische.
+\section{Einfluss abiotischer Faktoren}
+
+\begin{figure}[ht]
+\includegraphics[height=8.5cm]{Abbildungen/eod_boxplot}
+\caption{\label{fig:eods}Graphik zeigt die EOD Verteilung der Fische über den gesamten Versuchszeitraum inklusive Vorversuche.}
+\end{figure}
+
+Abbildung \ref{fig:eods} zeigt die EOD Frquenzen der Versuchstiere über alle Versuche, Vorversuche inbegriffen. Die EOD Frequenz von Fisch 1 liegt dabei im Median bei 955 Hertz. Die EOD Frequenz von Fisch 1 schwankte dabei im Bereich von 864 - 1001 Hertz. Der Median von Fisch 2 hingegen liegt etwas tiefer und zwar bei 873 Millivolt. Die EOD Frequenz von Fisch 2 schwankte zwischen 809 und 986 Hertz. Fisch 3 hatte von allen Versuchstieren die höchste EOD Frequenz und lag bei einem Median von 1261 Millivolt. Hier gab es Schwankungen zwischen 1149 und 1298 Hertz. Der Median von Fisch 4 befand sich bei 927 Millivolt (829-955 Hertz) und der von Fisch 5 bei 907 Millivolt (894 - 922 Hertz). Fisch 6 besaß mit einem Median von 1064.5 Millivolt die zweit höchste EOD Frequenz (1027 - 1945 Hertz).
+
+Bei Fisch 2 ist die Spanne von EODs im Vergleich sehr groß. Eventuell probleme beim Messen der EOD??? Vergleich komischen Temperatur eod plot von Fisch 2
+
+\begin{figure}[ht]
+\includegraphics[height=6.5cm]{Abbildungen/date_temperature_eod_plot2015albi02}
+\caption{\label{fig:temperatureod1}Die Graphik zeigt die Wassertemperaturen (rote Kurve) und die EOD Frequenzen von Fisch 1 in grün über die gesamte Versuchszeit einschließlich Vorversuche.}
+\end{figure}
+
+\begin{figure}[ht]
+\includegraphics[height=6.5cm]{Abbildungen/date_temperature_eod_plot2015albi01}
+\caption{\label{fig:temperatureod2}Die Graphik zeigt die Wassertemperaturen (rote Kurve) und die EOD Frequenzen von Fisch 2 in grün über die gesamte Versuchszeit einschließlich Vorversuche.}
+\end{figure}
+
+
+%\begin{figure}[ht]
+%\subfigure[Fisch 3]
+%{\includegraphics[height=4cm]{Abbildungen/date_temperature_eod_plot2014albi08}}
+%\subfigure[Fisch 4]
+%{\includegraphics[height=4cm]{Abbildungen/date_temperature_eod_plot2013albi14}}
+%\subfigure[Fisch 5]
+%{\includegraphics[height=4cm]{Abbildungen/date_temperature_eod_plot2013albi09}}
+%\subfigure[Fisch 6]
+%{\includegraphics[height=4cm]{Abbildungen/date_temperature_eod_plot2012albi01}}
+%\caption{\label{fig: temperatureod3}  Wassertemperaturen (rote Kurve) und die EOD Frequenzen von Fisch 3, 4, 5, 6 in grün über die gesamte Versuchszeit einschließlich Vorversuche.}
+%\end{figure}
+
+
+\begin{figure}[ht]
+\subfigure[Fisch1]
+{\includegraphics[height=6cm]{Abbildungen/regression1}}
+\subfigure[Fisch2]
+{\includegraphics[height=6cm]{Abbildungen/regression2}}
+\caption{\label{fig:regression}Regressionsgeraden von Temperatur und EOD.}
+\end{figure}
+
+
+\begin{figure}[ht]
+\includegraphics[height=6.5cm]{Abbildungen/conductivity}
+\caption{\label{fig:conductivity}Korrelation von Leitfähigkeit und EOD Frequenz. Fisch 1.}
+\end{figure}
+
+Wie in Abbildung \ref{fig:conductivity} am Beispiel von Fisch 1 dargestellt, hat die Leitfähigkeit keinen Einfluss auf die EOD Frequenz der Versuchstiere. So liegt der Korrelationskoeffizient von Pearson bei -0,055 bei einem P-Wert von 0,26. Es liegt also keine Korrelation von EOD und Leitfähigkeit vor. PAPER???
+
+
+\section{Im Videotracking verwendete Parameter}
+
+
+DISTANZEN:
+
+\begin{figure}[ht]
+\subfigure[Histogramme]
+{\includegraphics[height=8.5cm]{Abbildungen/Histogramm_Elektrodendistanzen_mit_Fischentscheidung2015albi02}}
+\subfigure[Roc Kurve Elektrode 1]
+{\includegraphics[height=5.5cm]{Abbildungen/roc_curve_E1Distanz2015albi02}}
+\subfigure[Roc Kurve Elektrode 2]
+{\includegraphics[height=5.5cm]{Abbildungen/roc_curve_E2Distanz2015albi02}}
+\caption{\label{fig:distanzen_entscheidung}Histogramme und Roc Kurven dazu von Fisch 1}
+\end{figure}
+
+Zunächst sollte untersucht werden, welche Distanzen zu einer Elektrode bestehen, wenn sie ausgewählt wurde. Hierfür wurde um die beiden Elektroden ein Radius von 35 cm gelegt. Die daraus entstandenen Histogramme sind für Fisch 1 in Abbildung \ref{fig:histodistanzen_entscheidung} (a) zu sehen. Hierbei wurden für Elektrode 1 und Elektrode 2 je die richtig Positiven und die falsch Positiven aufgetragen. Unter E1 richtig positive versteht man die Distanzen zu Elektrode 1, wenn diese richtig war und vom Fisch ausgewählt wurde. Bei den E 1 falsch Positiven hingegen wurden die Distanzen zu Elektrode 1 aufgetragen, wenn Elektrode 1 falsch war aber dennoch vom Fisch gewählt wurde. Analog dazu wurden bei E2 richtig Positive und E2 falsch Postive die Distanzen zu Elektrode 2 aufgetragen.
+Fisch 1 hat dabei insgesamt eine starke Anhäufung von kurzen Distanzen, bei den E1 falsch Positiven. Das heißt er hat sich häufig nah an Elektrode 1 aufgehalten, wenn diese falsch war und er sie außgewählt hat
+
+
+Um zu überprüfen, ob es Unterschiede in den Verteilungen gibt, wenn es richtig Positiv ist und falsch Postitiv ist. Sprich um zu überprüfen, ob die Distanzen zu den Elektroden unterschiedlich verteilt waren, je nach dem ob die Elektrode, die der Fisch ausgewählt hat, richtig oder falsch war, wurden ROC Kurven erstellt.
+Diese sind in Abbildung \ref{fig:distanzen_entscheidung} (b) zu sehen. Es wurde jeweils eine Kurve für Elektrode 1 (siehe Abb \ref{fig:distanzen_entscheidung} (b)) und eine für Elektrode 2 (siehe Abb. \ref{fig:distanzen_entscheidung} (c) ertellt. Auf der X-Achse ist jeweils die Falsch Positiv Rate dargestellt, während auf der Y-Achse die richtig Positiv Rate aufgetragen ist. Die Abkürzung FuK steht für "Fläche unter der Kurve". Der Wert gibt also wie der Name bereits verrät die Fläche unter der ROC Kurve an. Läge der Wert bei 0,5 dann wären beide Verteilungen gleich??? Je kleiner der Wert ist desto mehr sind die Werte zum Falsch Positiven hin verschoben, je größer die Fläche ist, desto mehr sind die Werte zum richtig positiven verschoben.
+
+Mit der gleichen Vorgehensweise wurde anschließend bei Fisch 2 gearbeitet. Das so entstandene Histogramm ist in Abbildung \ref{fig:histodistanzen_entscheidung2} zu sehen. Ähnlich wie bei Fisch 1 kommen auch hier bei den falsch Positiv Kategorien für Elektrode 1 und Elektrode 2 häufiger kurze Distanzen vor, als bei den richtig Positiv Kategorien.
+Auch die ROC Kurven von Fisch 2 (siehe Abb. \ref{fig:roc_distanzen_entscheidung2} sind vergleichbar mit den Kurven von Fisch 1. So beträgt die FuK von Elektrode 1 0,35 (bei Fisch 1 waren es 0,37) und bei Elektrode 2 0,41 (bei Fisch 1: 0,42).
+
+Mögliche Gründe dafür: möglicherweise observer bias, sprich wenn fisch noch nicht so nah an elektrode war, wurde das früher als richtige entscheidung gezählt und wenn fisch an der falschen elektrode war wurde länger gewartet. möglicherweise liegt der grund auch im ablauf: wenn der fisch die falsche elektrode ausgewöhlt hat, bekam er direkt ein feedback da der stimulus gleich aus ging. wenn der fisch richtig gewählt hat wurde das video ausgeschaltet, aber der stimulus angelassen und der fisch musste noch einige zeit an elektrode verweilen und auf die belohnung warten, was aber vom video nicht erfasst wurde. wenn der fisch in dieser zeit wieder weggeschwommen ist, wurde der versuch auch nicht als richtig gewertet.
+
+GESCHWINDIGKEITEN:
+
+schwimmgeschwindigkeiten an den elektroden bei fisch 4 und 6 höher als wenn entfernt: Grund hierfür ist vermutlich, dass die Fische im Gegensatz zu Fisch 1 und 2 die Aufgabe nicht verstanden haben. Da die Elektroden an den an den Beckenlängsseiten angebracht ist, schwimmen die Fische dort vermutlich schnell vorbei.
 
 
 
-\subsection{Diskussion der Relacsauswertung}
+Für Fisch 1 und Fisch 2 wurden dann nochmal die Geschwindigkeiten an ELektrode 1 und 2 verglichen, wenn die Elektrode richtig und ausgewählt war mit dem Fall, dass die Elektrode Falsch und ausgewählt war. Abbildung \ref{fig:geschwindigkeiten_entscheidung} (a) zeigt dazu die Histogramme für Fisch 1. Wie in der Abbbildung zu sehen, unterscheiden sich die Histogramme nicht wesentlich voneinander. Auch die ROC Kurven für Elektrode 1 (siehe Abb. \ref{fig:geschwindigkeiten_entscheidung} b ) und für Elektrode 2 \ref{fig:geschwindigkeiten_entscheidung c} fallen dementsprechend aus: Mit einer FuK von 0,45 bzw. 0,44 zeigen beide ROC Kurven, dass sich die Histogramme nicht wesentlich voneinander unterscheiden, egal ob der Fisch die richtige oder die Falsche Elektrode ausgewählt hat.
 
-\subsubsection{S+ und s- vertauscht}
+\begin{figure}[ht]
+\subfigure[Histos]
+{\includegraphics[height=8.5cm]{Abbildungen/Histogramm_Geschwindigkeiten_mit_Fischentscheidung2015albi02}}
+\subfigure[Roc Kurve Elektrode 1]
+{\includegraphics[height=5.5cm]{Abbildungen/roc_curve_E1Geschwindigkeit2015albi02}}
+\subfigure[Roc Kurve Elektrode 2]
+{\includegraphics[height=5.5cm]{Abbildungen/roc_curve_E2Geschwindigkeit2015albi02}}
+\caption{\label{fig:geschwindigkeiten_entscheidung}Roc Kurven Geschwindigkeiten mit Entscheidung von Fisch 1}
+\end{figure}
+
+Analog dazu wurden auch für Fisch 2 die entsprechenden Histogramme erstellt, wie in Abbildung \ref{fig: histo_geschwindigkeit2} zu sehen. Hier unterscheiden sich die Histogramme auf den ersten Blick etwas stärker, so ist das Peak bei E1 falsch und ausgewählt etwas höher als bei E1 richtig und ausgewählt.
+Die ROC Kurven (siehe Abb. \ref{fig:roc_geschwindigkeiten_entscheidung2}) aber zeigen, dass auch hier kein nennenswerter Unterschied besteht. So beträgt die FuK bei Elektrode 1 0,41 und bei Elektrode 2 0,45.
+
+ORIENTIERUNG: warum kein guter Parameter?
+
+
+\section{Lernerfolg der Versuchstiere}
+
+Fisch 1 und Fisch 2 gingen nach 9 Versuchstagen von der ersten Phase, der \emph{Eingewöhnung}, in die nächste Phase, die \emph{Konditionierung auf S+}, über. Da Fisch 3 und Fisch 4 schlechter kooperierten, ginge diese erst nach elf Versuchstagen in die nächste Phase über. Wie in Abbildung \ref{fig: versuch1_zeit} im Ergebnisteil aufgezeigt wurde, verringerte sich die mittlere Zeit, welche Fisch 1 und Fisch 2 benötigten, um einen Versuchsdurchlauf in der Eingewöhnung erfolgreich abzuschließen mit der Anzahl der bereits absolvierten Versuchstage. Daraus lässt sich schließen, dass Fisch 1 und Fisch 2 lernten, dass an den Elekrtroden Futter zu finden war. Bei Fisch 3 und Fisch 4 hingegen schwankten die mittleren Zeiten stark. Bei beiden Tieren ist eine Art Zickzackmuster im Verlauf erkennbar. Besonders bei Fisch 4 ist auffällig, dass immer abwechselnd auf einen Tag, an dem er eine kurze mittlere Zeit hatte, ein Tag folgte, an welchem er schlecht kooperierte und lange mittlere Versuchszeiten hatte. Eine mögliche Erklärung für dieses Verhalten wäre, dass die beiden Versuchstiere nach einem erfolgreichen Versuchstag, an welchem wegen kürzerer Versuchszeiten mehr Versuchsdurchläufe stattfinden konnten und somit auch mehr Larven verfüttert wurden, am nächsten Tag keinen Hunger mehr hatten. Dagegen spricht allerdings, dass es sich bei den Tagen, an welchen die Fische schlecht abschnitten häufig um Montage handelte und eigentlich zu erwarten wäre, dass die Tiere nach dem Wochenende hungrig sind. Außerdem handelte es sich bei den unstetig abschneidenden Versuchstieren Fisch 3 und Fisch 4 um die ausgewachsenen adulten Tiere. Es wäre also zu erwarten, dass diese im Vergleich zu den juvenilen kleineren Tieren Fisch 1 und Fisch 2 hungriger wären. 
+Eine daher wahrscheinlichere Erklärung für das schnellere Lernen und das bessere Abschneiden von Fisch 1 und 2 könnte eben daran liegen, dass die Jungtiere neugieriger und lernfähiger als die adulten Tiere waren.
+Paper?????
+
+Paper Konditionierung?
+
+Was sich bereits im ersten Vorversch zeigte, zog sich durch die weiteren Vorversuche und den Hauptversuch durch. So schnitten wie in Abbildung \ref{fig: erfolgsquote} zu sehen Fisch 1 und Fisch 2 auch bei den beiden weiteren Vorversuchen besser ab und konnten wegen geringerer Zeiten, welche für einen Versuchsdurchlauf benötigt wurden auch insgesamt mehr Versuchsdurchläufe pro Vorversuch absolvieren. Fisch 3 wurde aufgrund des schlechten Abschneidens gar nicht erst zum Hauptversuch zugelassen
+
+Im Hauptversuch wurden an jedem Versuchstag bei jedem Versuchstier zehn Versuchsdurchläufe durchgeführt. Da manche Versuchstiere aber sehr wenig kooperierten gab es zu Teil Versuchstage, an welchen das Versuchstier an keinem der zehn Versuchsdurchläufe die Startbox verließ.
+Im Hauptversuch wurden dann noch Fisch 5 und Fisch 6 dazugenommen, welche den Versuch bereits im Rahmen einer Vorangegangenen Bachelorarbeit erlernt hatten. Die beiden Versuchstiere erinnerten sich jedoch nicht an den Ablauf der Versuche. Fisch 5 verließ meist gar nicht erst die Startbox. Fisch 6 kooperierte besser und verließ die Startbox, wählte aber keine der beiden Elektroden aus. Der S+ und S- Stimulus der beiden Versuchstiere waren dieselben, wie bei der vorangegengenen Bachelorarbeit. Die mögliche Erklärung, dass die Fische die Versuche nicht mehr beherrschten, weil sie in der Zwischenzeit an anderen Verhaltensexperimenten teilnahmen, ist auch nicht schlüssig, da Fisch 6 zwar tatsächlich zwischenzeitlich an anderen Experimenten teilgenommen hatte, Fisch 5 aber nicht, welcher aber deutlich schlechter abschnitt als Fisch 6.
+
+Wie auch in Abbildung \ref{fig: heatmap_positions} und bei den Geschwindigkeitsboxplots (siehe Abb. \ref{fig: boxplot_geschwindigkeit}) zu sehen, erlernten lediglich Fisch 1 und 2 überhaupt die gestellte Aufgabe. So verlangsamten Fisch 1 und 2 ihre Schwimmgeschwindigkeit signifikant, wenn sie sich in der Nähe der Elektroden befanden. Fisch 4 und Fisch 6 hingegen waren sogar im Bereich der Elektroden sigifikant schneller als entfernt von den Elektroden. Das könnte daran liegen, dass die Elektroden an den Beckenlängsseiten liegen und die Tiere beim Schwimmen im Becken an den Längsseiten die größte Möglichkeit zum schnell schwimmen hatten. Genauso hielten sich Fisch 1 und Fisch 2 häufig im Bereich der Elektroden auf, wie in Abbildung \ref{fig: heatmap_positions} zu sehen ist, während Fisch 4 und Fisch 6 keine besondere Präferenz für den Bereich um die Elektroden herum zeigten.
+
+Geschwindigkeitsboxplots: Fisch 4 und Fisch 6 generell schneller als Fisch 1 und 2. Möglicher Grund: Aufgeregt, unwohl gefühlt auf offener Fläche?
+
+
+Daraus, dass nur zwei von vier Versuchstieren die Aufgabe lernten und daraus, dass die  Versuchstiere Fisch 5 und 6, welche erst beim Hauptversuch hinzugezogen wurden, sich an die schon einmal erlernte Aufgabe nicht mehr erinnerten, lässt sich schließen, dass es sich für die Versuchstiere um eine komplexe und schwere Aufgabe handelte.
+
+\section{Diskussion der Relacsauswertung}
+
+Spielt die Amplitude eine Rolle? --> nein
+
+warum könnte Fisch 2 den eigenmannia stimulus bevorzugen??? weil wie ein fisch??? bekannter als sinusartiger stimulus??? konkurrenz???
 
 wenn man die stimuli bei 1mV und bei 2mV bei Fisch 2 'umdreht' ergibt sich:
 overview: median: 50 Prozent, gewichtetes Mittel: 54,08 Prozent, P-Wert: 0,161
 amplitude 1mV: median: 50, gewichtetes mittel: 54,08, p-wert: 0,2833
 amplitude 2mV: median: 70, gewichtetes mittel: 66,67, p-wert: 0,029
-
-
 
 
 \begin{table} [h] 
@@ -38,101 +155,5 @@ amplitude 2mV: median: 70, gewichtetes mittel: 66,67, p-wert: 0,029
 
 warum könnte der S- stimulus für fisch 2 attraktiver sein? Natürliche Präferenz?
 
-
-\subsection{Diskussion der Trackingauswertung}
-
-\subsubsection{Distanz zu den Elektroden Histos mit entscheidung}
-
-\begin{figure}[ht]
-\subfigure[Histogramme]
-{\includegraphics[height=8.5cm]{Abbildungen/Histogramm_Elektrodendistanzen_mit_Fischentscheidung2015albi02}}
-\subfigure[Roc Kurve Elektrode 1]
-{\includegraphics[height=5.5cm]{Abbildungen/roc_curve_E1Distanz2015albi02}}
-\subfigure[Roc Kurve Elektrode 2]
-{\includegraphics[height=5.5cm]{Abbildungen/roc_curve_E2Distanz2015albi02}}
-\caption{\label{fig:distanzen_entscheidung}Histogramme und Roc Kurven dazu von Fisch 1}
-\end{figure}
-
-Zunächst sollte untersucht werden, welche Distanzen zu einer Elektrode bestehen, wenn sie ausgewählt wurde. Hierfür wurde um die beiden Elektroden ein Radius von 35 cm gelegt. Die daraus entstandenen Histogramme sind für Fisch 1 in Abbildung \ref{fig:histodistanzen_entscheidung} (a) zu sehen. Hierbei wurden für Elektrode 1 und Elektrode 2 je die richtig Positiven und die falsch Positiven aufgetragen. Unter E1 richtig positive versteht man die Distanzen zu Elektrode 1, wenn diese richtig war und vom Fisch ausgewählt wurde. Bei den E 1 falsch Positiven hingegen wurden die Distanzen zu Elektrode 1 aufgetragen, wenn Elektrode 1 falsch war aber dennoch vom Fisch gewählt wurde. Analog dazu wurden bei E2 richtig Positive und E2 falsch Postive die Distanzen zu Elektrode 2 aufgetragen.
-Fisch 1 hat dabei insgesamt eine starke Anhäufung von kurzen Distanzen, bei den E1 falsch Positiven. Das heißt er hat sich häufig nah an Elektrode 1 aufgehalten, wenn diese falsch war und er sie außgewählt hat
-
-
-Um zu überprüfen, ob es Unterschiede in den Verteilungen gibt, wenn es richtig Positiv ist und falsch Postitiv ist. Sprich um zu überprüfen, ob die Distanzen zu den Elektroden unterschiedlich verteilt waren, je nach dem ob die Elektrode, die der Fisch ausgewählt hat, richtig oder falsch war, wurden ROC Kurven erstellt.
-Diese sind in Abbildung \ref{fig:distanzen_entscheidung} (b) zu sehen. Es wurde jeweils eine Kurve für Elektrode 1 (siehe Abb \ref{fig:distanzen_entscheidung} (b)) und eine für Elektrode 2 (siehe Abb. \ref{fig:distanzen_entscheidung} (c) ertellt. Auf der X-Achse ist jeweils die Falsch Positiv Rate dargestellt, während auf der Y-Achse die richtig Positiv Rate aufgetragen ist. Die Abkürzung FuK steht für "Fläche unter der Kurve". Der Wert gibt also wie der Name bereits verrät die Fläche unter der ROC Kurve an. Läge der Wert bei 0,5 dann wären beide Verteilungen gleich??? Je kleiner der Wert ist desto mehr sind die Werte zum Falsch Positiven hin verschoben, je größer die Fläche ist, desto mehr sind die Werte zum richtig positiven verschoben.
-
-Mit der gleichen Vorgehensweise wurde anschließend bei Fisch 2 gearbeitet. Das so entstandene Histogramm ist in Abbildung \ref{fig:histodistanzen_entscheidung2} zu sehen. Ähnlich wie bei Fisch 1 kommen auch hier bei den falsch Positiv Kategorien für Elektrode 1 und Elektrode 2 häufiger kurze Distanzen vor, als bei den richtig Positiv Kategorien.
-Auch die ROC Kurven von Fisch 2 (siehe Abb. \ref{fig:roc_distanzen_entscheidung2} sind vergleichbar mit den Kurven von Fisch 1. So beträgt die FuK von Elektrode 1 0,35 (bei Fisch 1 waren es 0,37) und bei Elektrode 2 0,41 (bei Fisch 1: 0,42).
-
-DISKUSSION: Mögliche Gründe dafür: möglicherweise observer bias, sprich wenn fisch noch nicht so nah an elektrode war, wurde das früher als richtige entscheidung gezählt und wenn fisch an der falschen elektrode war wurde länger gewartet. möglicherweise liegt der grund auch im ablauf: wenn der fisch die falsche elektrode ausgewöhlt hat, bekam er direkt ein feedback da der stimulus gleich aus ging. wenn der fisch richtig gewählt hat wurde das video ausgeschaltet, aber der stimulus angelassen und der fisch musste noch einige zeit an elektrode verweilen und auf die belohnung warten, was aber vom video nicht erfasst wurde. wenn der fisch in dieser zeit wieder weggeschwommen ist, wurde der versuch auch nicht als richtig gewertet.
-
-Geschwindigkeitsboxplots: Fisch 4 und Fisch 6 generell schneller als Fisch 1 und 2. Möglicher Grund: Aufgeregt, unwohl gefühlt auf offener Fläche?
-
-
-\section{Geschwindigkeitshistos}
-Für Fisch 1 und Fisch 2 wurden dann nochmal die Geschwindigkeiten an ELektrode 1 und 2 verglichen, wenn die Elektrode richtig und ausgewählt war mit dem Fall, dass die Elektrode Falsch und ausgewählt war. Abbildung \ref{fig:geschwindigkeiten_entscheidung} (a) zeigt dazu die Histogramme für Fisch 1. Wie in der Abbbildung zu sehen, unterscheiden sich die Histogramme nicht wesentlich voneinander. Auch die ROC Kurven für Elektrode 1 (siehe Abb. \ref{fig:geschwindigkeiten_entscheidung} b ) und für Elektrode 2 \ref{fig:geschwindigkeiten_entscheidung c} fallen dementsprechend aus: Mit einer FuK von 0,45 bzw. 0,44 zeigen beide ROC Kurven, dass sich die Histogramme nicht wesentlich voneinander unterscheiden, egal ob der Fisch die richtige oder die Falsche Elektrode ausgewählt hat.
-
-\begin{figure}[ht]
-\subfigure[Histos]
-{\includegraphics[height=8.5cm]{Abbildungen/Histogramm_Geschwindigkeiten_mit_Fischentscheidung2015albi02}}
-\subfigure[Roc Kurve Elektrode 1]
-{\includegraphics[height=5.5cm]{Abbildungen/roc_curve_E1Geschwindigkeit2015albi02}}
-\subfigure[Roc Kurve Elektrode 2]
-{\includegraphics[height=5.5cm]{Abbildungen/roc_curve_E2Geschwindigkeit2015albi02}}
-\caption{\label{fig:geschwindigkeiten_entscheidung}Roc Kurven Geschwindigkeiten mit Entscheidung von Fisch 1}
-\end{figure}
-
-Analog dazu wurden auch für Fisch 2 die entsprechenden Histogramme erstellt, wie in Abbildung \ref{fig: histo_geschwindigkeit2} zu sehen. Hier unterscheiden sich die Histogramme auf den ersten Blick etwas stärker, so ist das Peak bei E1 falsch und ausgewählt etwas höher als bei E1 richtig und ausgewählt.
-Die ROC Kurven (siehe Abb. \ref{fig:roc_geschwindigkeiten_entscheidung2}) aber zeigen, dass auch hier kein nennenswerter Unterschied besteht. So beträgt die FuK bei Elektrode 1 0,41 und bei Elektrode 2 0,45.
-
-\section{Allgemeines}
-
-\begin{figure}[ht]
-\includegraphics[height=8.5cm]{Abbildungen/eod_boxplot}
-\caption{\label{fig:eods}Graphik zeigt die EOD Verteilung der Fische über den gesamten Versuchszeitraum inklusive Vorversuche.}
-\end{figure}
-
-Der EOD Median von Fisch 1 (siehe Abbildung \ref{fig:eods}) liegt dabei bei 953 Millivolt. Der Median von Fisch 2 hingegen liegt etwas tiefer und zwar bei 869 Millivolt. Fisch 3 hatte von allen Versuchstieren die höchste EOD Frequenz und lag bei einem Median von 1261 Millivolt. Der Median von Fisch 4 befand sich bei 925 Millivolt und der von Fisch 5 bei 907 Millivolt. Fisch 6 besaß mit einem Median von 1064.5 Millivolt die zweit höchste EOD Frequenz.
-
-
-\begin{figure}[ht]
-\includegraphics[height=6.5cm]{Abbildungen/date_temperature_eod_plot2015albi02}
-\caption{\label{fig:temperatureod1}Die Graphik zeigt die Wassertemperaturen (rote Kurve) und die EOD Frequenzen von Fisch 1 in grün über die gesamte Versuchszeit einschließlich Vorversuche.}
-\end{figure}
-
-\begin{figure}[ht]
-\includegraphics[height=6.5cm]{Abbildungen/date_temperature_eod_plot2015albi01}
-\caption{\label{fig:temperatureod2}Die Graphik zeigt die Wassertemperaturen (rote Kurve) und die EOD Frequenzen von Fisch 2 in grün über die gesamte Versuchszeit einschließlich Vorversuche.}
-\end{figure}
-
-
-\begin{figure}[ht]
-\subfigure[Fisch 3]
-{\includegraphics[height=4cm]{Abbildungen/date_temperature_eod_plot2014albi08}}
-\subfigure[Fisch 4]
-{\includegraphics[height=4cm]{Abbildungen/date_temperature_eod_plot2013albi14}}
-\subfigure[Fisch 5]
-{\includegraphics[height=4cm]{Abbildungen/date_temperature_eod_plot2013albi09}}
-\subfigure[Fisch 6]
-{\includegraphics[height=4cm]{Abbildungen/date_temperature_eod_plot2012albi01}}
-\caption{\label{fig: temperatureod3}  Wassertemperaturen (rote Kurve) und die EOD Frequenzen von Fisch 3, 4, 5, 6 in grün über die gesamte Versuchszeit einschließlich Vorversuche.}
-\end{figure}
-
-
-\begin{figure}[ht]
-\subfigure[Fisch1]
-{\includegraphics[height=6cm]{Abbildungen/regression1}}
-\subfigure[Fisch2]
-{\includegraphics[height=6cm]{Abbildungen/regression2}}
-\caption{\label{fig:regression}Regressionsgeraden von Temperatur und EOD.}
-\end{figure}
-
-
-
-\section{Vorversuche}
-\subsection{Eingewöhnung}
-
-Fish 1 und Fisch 2 gingen nach 9 Versuchstagen in die nächste Phase die "Konditionierung auf den gewünschten Reiz" über. Da Fisch 3 und Fisch 4 schlechter kooperierten, ginge diese erst nach elf Versuchstagen in die nächste Phase über.
-
-
-Paper Konditionierung?
+\section{Schlussfolgerung - Können die Fische die Stimuli unterscheiden?}
 

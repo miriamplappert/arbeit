@@ -31,45 +31,38 @@ Abbildung \ref{fig: versuch1_zeit}, zeigt wie viel Zeit die vier Versuchstiere p
 \end{figure}
  
 Wie erfolgreich die Versuchstiere die drei Vorversuche erlernten, ist in Abbildung \ref{fig: erfolgsquote} zu sehen. Hier sind in Form eines Balkendiagramms für Fische 1 - 4 die Prozentsätze der erfolgreich absolvierten Versuchsdurchläufe für jeden der drei Vorversuche in Form von drei Balken pro Abbildung (a-d) aufgetragen. Die Zahlen über den Balken geben an, wie viele Versuchsdurchläufe das Versuchstier in dem Vorversuch absolviert hat. Die Zahl hängt davon ab, wie viel Zeit das Versuchstier für einen Versuchsdurchlauf brauchte. Da Fisch 1 und Fisch 2, wie beispielhaft in Abbildung \ref{fig: versuch1_zeit} zu sehen, kürzer für einen Versuchsdurchlauf brauchten als Fisch 3 und Fisch 4, konnten diese insgesamt mehr Versuchsdurchläufe absolvieren. Wie in Abbildung \ref{fig: erfolgsquote} zu sehen ist, lagen die Erfolgsquoten von Fisch 1 und Fisch 2 in den drei Vorversuchen immer über 60 Prozent. Fisch 3 hingegen erreichte beim ersten und letzten Vorversuch nur Erfolgsquoten unter 10 Prozent. Beim zweiten Vorversuch liegt die Quote von Fisch 3 zwar bei knapp 80 Prozent, allerdings absolvierte Fisch 3 hier mit dreißig Versuchsdurchläufen auch nur halb so viele Versuchsdurchläufe wie Fisch 1. Grund dafür war, dass Fisch 3 die Startbox häufig nicht verließ und generell mehr Zeit zum Absolvieren der Aufgaben benötigte. Wie in Abbildung \ref{fig: erfolgsquote} (d) zu sehen schnitt Fisch vier etwas besser als Fisch 3 ab. 
-
 Da Fisch 3 beim letzten Vorversuch nur noch selten die Startbox verließ und die dargebotenen Larven nicht fraß, wurde er von dem nachfolgendem Hauptversuch ausgeschlossen. 
-
 
 \section{Hauptversuch - Videotrackingauswertung}
 Jeder Versuchsdurchlauf des Hauptversuchs wurde auf Video aufgenommen. Dabei wurde das Video gestartet, bevor die Startbox geöffnet wurde. Beendet wurde das Video bevor die Belohnung stattfand oder der Fisch zurück in die Startbox geführt wurde.
-Die Videodateien wurden dann, wie bereits im Kapitel Datenanalyse erläutert, mit Hilfe eines Trackingprogramms analysiert.
-
 
 \subsection{Einzelvideoauswertung anhand eines Beispielvideos}
-
-Im Folgenden wird zunächst anhand der Auswertung eines einzelnen Beispielvideos erläutert, wie die Auswertung aller Videodateien ablief.
 
 \begin{figure}[ht]
 \centering
 \includegraphics[height=6.5cm]{Abbildungen/2015-08-18_1_OV_path}
-\caption{\label{fig:path} Ergebnissbild des Videotrackingprogramms. Das Trackingprogramm erstellt für jedes getrackte Video, ein Bild, welches den zurückgelegten Weg des Fisches zeigt. Die blauen Punkte sind Postitionen, an welchen sich das Versuchstier sicher befand. Die roten Punkte sind geschätzte Positionen, an welchen das Trackingprogramm den Fisch kurzzeitig verloren hatte.}
+\caption{\label{fig:path} Ergebnissbild des Videotrackingprogramms.bDie blauen Punkte sind Positionen, an welchen sich das Versuchstier sicher befand. Die roten Punkte sind geschätzte Positionen, an welchen das Trackingprogramm den Fisch verloren hatte.}
 \end{figure}
-
-Zunächst wurde das Video mit dem Trackingprogramm getrackt, dabei wurden die X- und Y-Position im Versuchsbecken und die Orientierung des Versuchstiers für jedes Videoframe in jeweils einer Liste gespeichert. Außerdem wurde eine Graphik erstellt, welche den während des Versuchsdurchlaufs zurückgelegten Weg des Fisches zeigt (siehe Abb. \ref{fig:path}).
-In dem hier dargestellten Versuchsdurchlauf von Fisch 2 gab Elektrode 1 den belohnten Stimulus ab. Anhand des blauen Pfades in Abbildung \ref{fig:path} ist zu sehen, dass Fisch 2 zunächst Elektrode 2 passierte und anschließend bei Elektrode 1 im Kreis geschwommen ist. Im Folgenden sollten Parameter gefunden werden, welche anzeigen, dass eine Elektrode ausgewählt wurde.
 
 \begin{figure}
 \subfigure[Elektrode 1]
 {\includegraphics[height=5.5cm]{Abbildungen/distance_time_plot_2015-08-18_1_electrode1}}
 \subfigure[Elektrode 2]
 {\includegraphics[height=5.5cm]{Abbildungen/distance_time_plot_2015-08-18_1_electrode2}}
-\caption{\label{fig:distanzen}Die Distanzen im Beispielversuchsdurchlauf von Fisch 2 zu Elektrode 1 (a) und Elektrode 2 (b)über die Zeit.}
+\caption{\label{fig:distanzen}Die Distanzen im Beispielversuchsdurchlauf von Fisch 2 zu Elektrode 1 (a) und Elektrode 2 (b) über die Zeit.}
 \end{figure}
 
-\begin{figure}[ht]
-\centering
-\includegraphics[height=6.5cm]{Abbildungen/Orientierung_2015-08-18_1}
-\caption{\label{fig:orientierung}Orientierung und Geschwindigkeit des Versuchstiers im Beispielvideo an den Elektroden. Die Richtung der blauen Pfeile gibt die Orientierung des Fisches an, die Länge der Pfeile kodiert die Schwimmgeschwindigkeit des Versuchstieres.}
-\end{figure}
-
+Im Folgenden wird zunächst anhand der Auswertung eines einzelnen Beispielvideos erläutert, wie die Auswertung aller Videodateien ablief:
+Zunächst wurde das Video mit dem Trackingprogramm getrackt, dabei wurden die X- und Y-Position im Versuchsbecken und die Orientierung des Versuchstiers für jedes Videoframe in jeweils einer Liste gespeichert. Außerdem wurde eine Graphik erstellt, welche den während des Versuchsdurchlaufs zurückgelegten Weg des Fisches zeigt (siehe Abb. \ref{fig:path}).
+In dem hier dargestellten Versuchsdurchlauf von Fisch 2 gab Elektrode 1 den belohnten Stimulus ab. Anhand des blauen Pfades in Abbildung \ref{fig:path} ist zu sehen, dass Fisch 2 zunächst Elektrode 2 passierte und anschließend bei Elektrode 1 im Kreis geschwommen ist. Im Folgenden sollten Parameter gefunden werden, welche anzeigen, dass eine Elektrode ausgewählt wurde.
 Um zu überprüfen, wie nah sich das Versuchstier bei einem Versuchsdurchlauf an den Elektroden befand, wurden die Distanzen des Versuchstiers zu jeder Elektrode zu jedem Zeitpunkt berechnet. Abbildung \ref{fig:distanzen} zeigt hierbei die für das Beispielvideo entstandenen Graphen, wobei in (a) die Distanzen zu Elektrode 1 und in (b) die Distanzen zu Elektrode 2 über die Zeit aufgetragen sind. In diesem Beispiel verringert sich die Distanz zu Elektrode 1 über die Zeit auf weniger als fünf Zentimeter, während die Distanz zu Elektrode 2 bis auf ein kurzes Minimum im Bereich von 40 bis 60 Zentimetern liegt. 
 Im weiteren wurden die Orientierung des Versuchstieres zu den Elektroden und die Schwimmgeschwindigkeit des Versuchstieres an den Elektroden untersucht. In Abbildung \ref{fig:orientierung} sind die Orientierungen des Fisches an den Elektroden mittles blauer Pfeile aufgetragen. Die Länge der Pfeile kodiert dabei die Geschwindigkeit. Wie in der Abbildung zu sehen, schwamm Fisch 2 zunächst im 90 Gradwinkel an Elektrode 2 vorbei und orientierte sich dann mehrfach zu Elektrode 1 hin. Desweiteren ist anhand der Pfeillängen zu beobachten, dass das Versuchstier kurz vorm Erreichen beider Elektroden seine Geschwindigkeit verringert. 
-Für jede Videodatei wurden also die Distanzen zu den Elektroden, die Geschwindigkeiten an den Elektroden und die Orientierungen zu den Elektroden berechnet.
+
+\begin{figure}[H]
+\centering
+\includegraphics[height=6cm]{Abbildungen/Orientierung_2015-08-18_1}
+\caption{\label{fig:orientierung}Orientierung und Geschwindigkeit des Versuchstiers im Beispielvideo an den Elektroden. Die Richtung der blauen Pfeile gibt die Orientierung des Fisches an, die Länge der Pfeile kodiert die Schwimmgeschwindigkeit.}
+\end{figure}
 
 \subsection{Videoübergreifende Auswertung}
 
@@ -84,20 +77,19 @@ Die Datensätze für Fisch 4 und Fisch 6 waren wegen geringer Kooporation bei den 
 {\includegraphics[height=5.5cm]{Abbildungen/Histogramm_Elektrodendistanzen3_2015albi02}}
 \subfigure[Fisch2]
 {\includegraphics[height=5.5cm]{Abbildungen/Histogramm_Elektrodendistanzen3_2015albi01}}
-\caption{\label{fig:histodistanzen} Histogramme Distanzen Fisch 1 und 2}
+\caption{\label{fig:histodistanzen} Verteilung der Distanzen zu der Elektrode, welche den belohnten Stimulus (S+) abgibt. Die oberen Histogramme zeigen jeweils die Verteilung der Distanzen, wenn die Elektrode mit dem belohnten Stimulus ausgewählt wurde. Die unteren Histogramme hingegen zeigen die Distanzen, wenn die andere Elektrode mit dem unbelohnten (S-) Stimuls ausgewählt wurde.}
 \end{figure}
 
-Abbildung \ref{fig:histodistanzen} zeigt für Fisch 1 (a) und Fisch 2 (b) die Distanzen zu der Elektrode mit dem belohnten Reiz (S+), welche im weiteren als 'richitge Elektrode' bezeichnet wird. Dabei zeigen die oberen Histogramme jeweils die Verteilung der Distanzen zur richtigen Elektrode von Versuchsdurchläufen, in welchen die richtige Elektrode ausgewählt wurde. Bei Fisch 1 betrug die mediane Distanz zur richtigen Elektrode hierbei 13,3 Zentimeter. Bei Fisch 2 waren es 9,9 Zentimeter. Die unteren Histogramme dagegen zeigten die Verteilung der Distanzen zur richtigen Elektrode, wenn die falsche Elektrode, sprich die Elektrode, welche den S- Stimulus abgab, ausgewählt wurde. Hierbei betrug bei Fisch 1 die mediane Distanz zur richtigen Elektrode 20 Zentimeter. 
-Ähnliches ergab sich für Fisch 2 mit einer medianen Distanz von 20, 6 Zentimetern.
+Abbildung \ref{fig:histodistanzen} zeigt für Fisch 1 (a) und Fisch 2 (b) die Distanzen zu der Elektrode mit dem belohnten Reiz (S+). Bei Fisch 1 betrug die mediane Distanz zur Elektrode mit dem S+ Stimulus 13,3 Zentimeter. Bei Fisch 2 waren es 9,9 Zentimeter. Wurde die Elektrode, welche den S- Stimulus abgab, ausgewählt, waren die Distanzen zu der S+ Elektrode höher: Bei Fisch 1 betrug die mediane Distanz zur richtigen Elektrode 20 Zentimeter. Ähnliches ergab sich für Fisch 2 mit einer medianen Distanz von 20, 6 Zentimetern.
 
 \subsubsection{Schwimmgeschwindigkeiten an den Elektroden}
 
-Ein weiterer Faktor, welcher zur Bewertung, ob die Fische eine Elektrode ausgewählt haben herbeigezogen wurde, war die Schwimmgeschwindigkeit. Dafür wurden zunächst die Geschwindigkeiten nahe der Elektroden mit den Geschwindigkeiten entfernt von den Elektroden verglichen. Als nahe den Elektroden wurde eine Distanz zu den Elektroden von maximal 12 Zentimetern festgelegt. Jede größere Distanz und die dazu gehörige Geschwindigkeit wurde zu entfernt von den Elektroden gezählt. Abbildung \ref{fig: boxplot_geschwindigkeit} (a) zeigt in Form eines Boxplots die Verteilung der Schwimmgeschwindigkeiten von Fisch 1 in der Nähe und entfernt von den Elektroden. Die mediane Schwimmgeschwindigkeit in der Nähe der Elektroden betrug dabei 6,34 Zentimeter pro Sekunde. Der Median der entfernten Geschwindigkeit hingegen lag bei 8,21.
-Ein Mann-Whitney U test Test ergab hierbei einen P-Wert von 0. Bei einer Datenmenge von 118538 Werten.
-Für Fisch 2 zeigt sich ähnliches: Wie in Abbildung \ref{fig: boxplot_geschwindigkeit} (b) zu sehen, war die Schwimmgeschwindigkeit von Fisch 2 ebenfalls in der Nähe der Elektroden niedriger. So ergab sich hier ein Median von 3,44 Zentimeter pro Sekunde in der Nähe der Elektroden, während die mediane Geschwindigkeit entfernt von den Elektroden 6,01 Zentimeter pro Sekunde betrug. Der Mann-Whitney U test Test ergab hier ebenfalls einen P-Wert von 0 bei einer Datenmenge von 89265 Werten.
+Vergleicht man die Schwimmgeschwindigkeiten der Versuchstiere nahe der Elektroden mit den Geschwindigkeiten entfernt von den Elektroden ergeben sich folgende wie in Abbildung \ref{fig: boxplot_geschwindigkeit} zu sehende Boxplots. Aufgrund der zuvor ermittelten medianen Distanzen zu den Elektroden, wurde eine Distanz von maximal 12 Zentimetern als 'nahe an den Elektroden' festgelegt. Jede größere Distanz und die dazu gehörige Geschwindigkeit wurde zu der Kategorie 'entfernt von den Elektroden' gezählt. Abbildung \ref{fig: boxplot_geschwindigkeit} (a) zeigt die Verteilung der Schwimmgeschwindigkeiten von Fisch 1 in der Nähe und entfernt von den Elektroden. Die mediane Schwimmgeschwindigkeit in der Nähe der Elektroden betrug dabei 6,34 Zentimeter pro Sekunde. Der Median der entfernten Geschwindigkeit hingegen lag bei 8,21 Zentimetern pro Sekunde. Der Wilcoxon-Mann-Whitney-Test ergab hierbei einen P-Wert von 0 bei einer Datenmenge von 19565 Datenpunkten in der Nähe der Elektrode und 98973 Datenpunkten entfernt von der Elektrode.
+Für Fisch 2 zeigt sich ähnliches: Wie in Abbildung \ref{fig: boxplot_geschwindigkeit} (b) zu sehen, war die Schwimmgeschwindigkeit von Fisch 2 ebenfalls in der Nähe der Elektroden niedriger. So ergab sich hier ein Median von 3,44 Zentimeter pro Sekunde in der Nähe der Elektroden, während die mediane Geschwindigkeit entfernt von den Elektroden 6,01 Zentimeter pro Sekunde betrug. Der Wilcoxon-Mann-Whitney-Test ergab hier ebenfalls einen P-Wert von 0 bei einer Datenmenge von 19688 Werten in der Nähe der Elektroden und 69577 Werten entfernt von den Elektroden.
+Bei Fisch 4 (siehe Abb. \ref{fig: boxplot_geschwindigkeit} c) und Fisch 6 (siehe Abb. \ref{fig: boxplot_geschwindigkeit} d) hingegen zeigt sich eine umgekehrte Tendenz: Hier waren die Fische an den Elektroden mit einer medianen Schwimmgeschwindigkeit von 11,8 Zentimetern pro Sekunde bei Fisch 4 und 9,81 Zentimetern pro Sekunde bei Fisch 6 etwas höher als entfernt von den Elektroden. So schwamm Fisch 4 entfernt von den Elektroden mit einer medianen Geschwindigkeit von 9,15 Zentimetern pro Sekunde und Fisch 6 mit 9,03 Zentimetern pro Sekunde. 
+Der Wilcoxon-Mann-Whitney-Test ergab für Fisch 4 einen P-Wert von $4,85*10^{-20}$ bei einer Datenmenge von 1448 Werten in der Nähe der Elektroden und 33728 Werten entfernt der Elektroden. Bei Fisch 6 ergab sich ein P-Wert von 0,00073 bei 3172 Werten nahe der Elektroden und 47293 entfernt.
 
-
-\begin{figure}[ht]
+\begin{figure}[H]
 \subfigure [Fisch 1]
 {\includegraphics[height=5.5cm]{Abbildungen/Velocityboxplot2015albi02}}
 \subfigure[Fisch 2]
@@ -106,15 +98,8 @@ Für Fisch 2 zeigt sich ähnliches: Wie in Abbildung \ref{fig: boxplot_geschwindig
 {\includegraphics[height=5.5cm]{Abbildungen/Velocityboxplot2013albi14}}
 \subfigure[Fisch 6]
 {\includegraphics[height=5.5cm]{Abbildungen/Velocityboxplot2012albi01}}
-\caption{\label{fig: boxplot_geschwindigkeit} Geschwindigkeits Boxplots}
+\caption{\label{fig: boxplot_geschwindigkeit} Verteilung der Schwimmgeschwindigkeiten der Versuchstiere nahe der Elektroden (Distanz < 12 Zentimeter) und entfernt von den Elektroden (Distanz > 12 Zentimeter)}
 \end{figure}
-
-Bei Fisch 4 (siehe Abb. \ref{fig: boxplot_geschwindigkeit} (c) und Fisch 6 (siehe Abb. \ref{fig: boxplot_geschwindigkeit} (d) hingegen zeigt sich eine umgekehrte Tendenz: Hier sind die Fische an den Elektroden sogar etwas schnelle (Median in der Nähe der Elektroden: Fisch 4: 11,8 Zentimeter pro Sekunde, Fisch 6: 9,81 Zentimeter pro Sekunde.
-
-Median entfernt von den Elektroden: Fisch 4: 9,15 Zentimeter pro Sekunde, Fisch 6: 9,03 Zentimeter pro Sekunde. Grund hierfür ist vermutlich, dass die Fische im Gegensatz zu Fisch 1 und 2 die Aufgabe nicht verstanden haben. Da die Elektroden an den an den Beckenlängsseiten angebracht ist, schwimmen die Fische dort vermutlich schnell vorbei.
-Mann-Whitney U test Test: P-Wert Fisch 4: 4,85 x 10 hoch -20, datenmenge von 35176
-Mann-Whitney U test Test: P-Wert Fisch 6: 0,00073, datenmenge von 50465
-
 
 \subsubsection{Häufig frequentierte Bereiche im Versuchsbecken}
 
@@ -127,11 +112,10 @@ Mann-Whitney U test Test: P-Wert Fisch 6: 0,00073, datenmenge von 50465
 {\includegraphics[height=6.5cm]{Abbildungen/Heatmap_positions2013albi14}}
 \subfigure[Fisch 6]
 {\includegraphics[height=6.5cm]{Abbildungen/Heatmap_positions2012albi01}}
-\caption{\label{fig: heatmap_positions} Positionen im Becken, an denen sich die Fische während der Versuche häufig aufgehalten haben. Der rote Punkt stellt Elektrode 1 dar, der blaue Punkt Elektrode 2.}
+\caption{\label{fig: heatmap_positions} Positionen im Becken, an denen sich die Fische während der Versuche aufgehalten haben. Die Legende in Form eines Farbbalkens zeigt an, wie häufig das Versuchstier einen Ort frequentierte. Die schwarzen Kreise markieren die Positionen der Elektroden.}
 \end{figure}
 
-Abbildung \ref{fig: heatmap_positions} zeigt die Positionen, an welchen sich die Versuchstiere über alle Versuchsdurchläufe hinweg im Becken aufhielten. Hierfür wurden alle vorhandenen Videos jedes Versuchstieres ausgewertet. Bei Fisch 1 handelte es sich dabei um 274 Videodateien, bei Fisch 2 sogar um 324. Bei den anderen Versuchstieren standen wegen der geringen Kooperation im Versuch weniger Videodateien zur Auswertung zur Verfügung (Fisch 4: 42 Videos, Fisch 5: 2 Videos, Fisch 6: 82 Videos).
-Wie in Abbildung \ref{fig: heatmap_positions} zu sehen, hielten sich Fisch 1 und Fisch 2 am Häufigsten im Eingangsbereich des Hauptbeckens und an den beiden Stimuluselektroden auf. Bei Fisch 4 und Fisch 5 hingegen ist lediglich ein Trend erkennbar, dass sich die Fische lieber an den Beckenrändern als in der freien Fläche in der Mitte des Versuchsbeckens aufhielten. Da bei Fisch 5 lediglich zwei Videos zur Auswertung zur Verfügung standen, ist hier kein deutlicher Trend ablesbar.
+Abbildung \ref{fig: heatmap_positions} zeigt, wie häufig sich die Versuchstiere in bestimmten Beckenbereichen über alle Versuchsdurchläufe hinweg aufhielten. Wie in Abbildung \ref{fig: heatmap_positions} zu sehen, hielten sich Fisch 1 und Fisch 2 am häufigsten im Bereich des Tors zur Startbox und nahe an den beiden Stimuluselektroden auf. Fisch 4 und Fisch 6 hielten sich ebenfalls häufig am Tor zur Startbox auf, zusätzlich ist ein bevorzugter Aufenthalt an den Beckenrändern erkennbar. Der Bereich um die Elektroden wird von Fisch 4 und Fisch 6 jedoch nicht häufiger frequentiert als die anderen Stellen am Beckenrand.
 
 
 \section{Hauptversuch - Relacsauswertung}
