@@ -12,13 +12,12 @@ Abbildung \ref{fig:eods} zeigt die EOD Frquenzen der Versuchstiere über alle Ver
 Bei Fisch 2 ist die Spanne von EODs im Vergleich sehr groß. Eventuell probleme beim Messen der EOD??? Vergleich komischen Temperatur eod plot von Fisch 2
 
 \begin{figure}[ht]
-\includegraphics[height=6.5cm]{Abbildungen/date_temperature_eod_plot2015albi02}
-\caption{\label{fig:temperatureod1}Die Graphik zeigt die Wassertemperaturen (rote Kurve) und die EOD Frequenzen von Fisch 1 in grün über die gesamte Versuchszeit einschließlich Vorversuche.}
-\end{figure}
-
-\begin{figure}[ht]
-\includegraphics[height=6.5cm]{Abbildungen/date_temperature_eod_plot2015albi01}
-\caption{\label{fig:temperatureod2}Die Graphik zeigt die Wassertemperaturen (rote Kurve) und die EOD Frequenzen von Fisch 2 in grün über die gesamte Versuchszeit einschließlich Vorversuche.}
+\centering
+\subfigure[Fisch1]
+{\includegraphics[height=5.5cm]{Abbildungen/temperatur1}}
+\subfigure[Fisch2]
+{\includegraphics[height=5.5cm]{Abbildungen/temperatur2}}
+\caption{\label{fig:temperatureod}Die Graphik zeigt die Wassertemperaturen (rote Kurve) und die EOD Frequenzen von Fisch 1 (a) und Fisch 2 (b) in grün über die gesamte Versuchszeit einschließlich Vorversuche.}
 \end{figure}
 
 
@@ -36,15 +35,6 @@ Bei Fisch 2 ist die Spanne von EODs im Vergleich sehr groß. Eventuell probleme b
 
 
 \begin{figure}[ht]
-\subfigure[Fisch1]
-{\includegraphics[height=6cm]{Abbildungen/regression1}}
-\subfigure[Fisch2]
-{\includegraphics[height=6cm]{Abbildungen/regression2}}
-\caption{\label{fig:regression}Regressionsgeraden von Temperatur und EOD.}
-\end{figure}
-
-
-\begin{figure}[ht]
 \includegraphics[height=6.5cm]{Abbildungen/conductivity}
 \caption{\label{fig:conductivity}Korrelation von Leitfähigkeit und EOD Frequenz. Fisch 1.}
 \end{figure}
@@ -53,6 +43,9 @@ Wie in Abbildung \ref{fig:conductivity} am Beispiel von Fisch 1 dargestellt, hat
 
 
 \section{Im Videotracking verwendete Parameter}
+
+
+Außerdem wurden Receiver Operating Characteristic (ROC) Graphen erstellt. Hierbei handelt es sich um eine Technik, mit welcher man Analysestrategien bewerten und analysieren kann \citep{Fawcett2004}.
 
 
 DISTANZEN:
@@ -113,6 +106,10 @@ Paper Konditionierung?
 
 Was sich bereits im ersten Vorversch zeigte, zog sich durch die weiteren Vorversuche und den Hauptversuch durch. So schnitten wie in Abbildung \ref{fig: erfolgsquote} zu sehen Fisch 1 und Fisch 2 auch bei den beiden weiteren Vorversuchen besser ab und konnten wegen geringerer Zeiten, welche für einen Versuchsdurchlauf benötigt wurden auch insgesamt mehr Versuchsdurchläufe pro Vorversuch absolvieren. Fisch 3 wurde aufgrund des schlechten Abschneidens gar nicht erst zum Hauptversuch zugelassen
 
+Die Zahl hängt davon ab, wie viel Zeit das Versuchstier für einen Versuchsdurchlauf brauchte. Da Fisch 1 und Fisch 2, wie beispielhaft in Abbildung \ref{fig: versuch1_zeit} zu sehen, kürzer für einen Versuchsdurchlauf brauchten als Fisch 3 und Fisch 4, konnten diese insgesamt mehr Versuchsdurchläufe absolvieren.
+auch nur halb so viele Versuchsdurchläufe wie Fisch 1. Grund dafür war, dass Fisch 3 die Startbox häufig nicht verließ und generell mehr Zeit zum Absolvieren der Aufgaben benötigte.
+
+
 Im Hauptversuch wurden an jedem Versuchstag bei jedem Versuchstier zehn Versuchsdurchläufe durchgeführt. Da manche Versuchstiere aber sehr wenig kooperierten gab es zu Teil Versuchstage, an welchen das Versuchstier an keinem der zehn Versuchsdurchläufe die Startbox verließ.
 Im Hauptversuch wurden dann noch Fisch 5 und Fisch 6 dazugenommen, welche den Versuch bereits im Rahmen einer Vorangegangenen Bachelorarbeit erlernt hatten. Die beiden Versuchstiere erinnerten sich jedoch nicht an den Ablauf der Versuche. Fisch 5 verließ meist gar nicht erst die Startbox. Fisch 6 kooperierte besser und verließ die Startbox, wählte aber keine der beiden Elektroden aus. Der S+ und S- Stimulus der beiden Versuchstiere waren dieselben, wie bei der vorangegengenen Bachelorarbeit. Die mögliche Erklärung, dass die Fische die Versuche nicht mehr beherrschten, weil sie in der Zwischenzeit an anderen Verhaltensexperimenten teilnahmen, ist auch nicht schlüssig, da Fisch 6 zwar tatsächlich zwischenzeitlich an anderen Experimenten teilgenommen hatte, Fisch 5 aber nicht, welcher aber deutlich schlechter abschnitt als Fisch 6.
 
@@ -156,4 +153,21 @@ amplitude 2mV: median: 70, gewichtetes mittel: 66,67, p-wert: 0,029
 warum könnte der S- stimulus für fisch 2 attraktiver sein? Natürliche Präferenz?
 
 \section{Schlussfolgerung - Können die Fische die Stimuli unterscheiden?}
+
+übersicht fisch 1 , Der Binomialtest ergab hier einen P-Wert von $6,388*10^{-5}$ was eine signifikante Abweichung von willkürlichen Entscheidungen im 50 Prozentbereich bedeutet.
+
+Fisch 2 hingegen liegt über den gesamten Hauptversuch gerechnet genau bei 50 Prozent mit einem entsprechend hohen P-Wert von  0.161
+
+ Im Median wählte Fisch 1 bei einer Stimulusamplitude von einem Millivolt in 66,7 Prozent der Fälle die richtige Elektrode aus. Der Binomialtest erbrachte für diese Verteilung einen P-Wert von 0,000116. Das Versuchstier hat sich also signifikant häufiger für die richtige Elektrode entschieden.  
+ 
+Fisch 2 1mV: Der Median der Leistungsverteilung liegt dabei genau bei 50 Prozent.Der Binomialtest ergab dementsprechend einen recht hohen P-Wert von 0,2839. 
+
+Fisch 1, Amplitude 2mV : Hierbei ergibt sich eine mediane Leistung von 61,3 Prozent. Der P-Wert des Binomialtests von 0,1766 ist nicht signifikant. Vergleicht man nun die Leistungen von Fisch 1 bei einer Amplitude von einem Millivolt mit den Leistungen bei einer Amplitude von zwei Millivolt mit Hilfe eines unabhängigen t-Tests, so ergibt sich ein P-Wert von 0,489. Die Leistungen von Fisch 1 hängen also nicht wesentlich von der Amplitude ab.
+
+fisch 2 amplitude 2mV: Der Median der richtigen Entscheidungen lag somit bei 30 Prozent. Der P-Wert des Binomialtests betrug 0,029, was anzeigt, dass sich Fisch 1 signifikant häufiger für die falsche Elektrode als für die richtige Elektrode entschieden hat. Der t-Test zur Überprüfung, ob sich die Leistungen von Fisch 2 bei den beiden verschiedenen Stimulusamplituden signifikant voneinander unterscheiden ergab hierbei einen P-Wert von 0,13.
+Die Stärke der Stimuli scheint also keinen signifikanten Einfluss auf die Leistungen der Versuchstiere zu haben.
+
+Fisch 2 s+ und s- vertauscht:
+In den ersten drei Versuchstagen nach der Umstellung, ist ein kontinuierlicher Anstieg der Leistung auf bis zu 80 Prozent zu beobachten. Dies hatte Fisch 2 zuvor an noch keinem Versuchstag erreicht. An den folgenden Tagen sinkt die Leistung jedoch wieder auf unter 50 Prozent ab.
+Insgesamt traf Fisch 2 an fünf der acht Versuchstage richtigen Entscheidungen von über 50 Prozent. Die mediane Leistung betrug 57,8 Prozent. Der Binomialtest ergab hierbei einen P-Wert von 0,561. Fisch 1 entschied sich also nicht signifikant häufiger für den belohnten Stimulus.
 
