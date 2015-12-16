@@ -1,4 +1,5 @@
-\documentclass[12pt,a4paper]{scrreprt}
+\documentclass[12pt,a4paper,abstracton,bibliography=totoc]{scrreprt}
+%\documentclass[12pt,a4paper,abstracton,bibliography=totoc,twoside,openright,BCOR=15mm]{scrreprt} %für zweiseitigen druck
 %
 %
 %% nötige packages
@@ -56,9 +57,9 @@
 \begin{document}
 
 \include{Titelseite}
+%\cleardoublepage bei zweiseitigem druck
 \include{Erklaerung}
 \include{Abstract} 
-
 
 %\setcounter{secnumdepth}{5}
 
