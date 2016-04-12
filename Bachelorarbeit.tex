@@ -1,5 +1,6 @@
-\documentclass[12pt,a4paper,abstracton,bibliography=totoc]{scrreprt}
-%\documentclass[12pt,a4paper,abstracton,bibliography=totoc,twoside,openright,BCOR=15mm]{scrreprt} %für zweiseitigen druck
+%\documentclass[12pt,a4paper,abstracton,bibliography=totoc]{scrreprt}%
+
+\documentclass[12pt,a4paper,abstracton,bibliography=totoc,twoside,openright,BCOR=15mm]{scrreprt} %für zweiseitigen druck
 %
 %
 %% nötige packages
@@ -16,7 +17,6 @@
 \usepackage{tocbasic}
 \usepackage{tikz}
 \usepackage{nicefrac}
-%\usepackage{chemarr} %Selber eingefügt für chem. Formeln. Keine Ahnung ob das ne gute Idee ist
 \usepackage[section]{placeins}
 \usepackage{pdfpages}
 \usepackage{upgreek}
@@ -57,7 +57,7 @@
 \begin{document}
 
 \include{Titelseite}
-%\cleardoublepage bei zweiseitigem druck
+\cleardoublepage %bei zweiseitigem druck
 \include{Erklaerung}
 \include{Abstract} 
 
